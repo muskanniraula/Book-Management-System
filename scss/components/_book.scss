@@ -1,0 +1,63 @@
+.book-status {
+    display: inline-flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.booked-book {
+    @extend .book-status;
+    background: #c22a34;
+}
+
+.available-book {
+    @extend .book-status;
+    background: #5ca202;
+}
+
+.book-preview {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    width: 183px;
+
+    .image {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        img {
+            height: 296px;
+            flex-shrink: 0;
+        }
+
+    }
+
+    h4 {
+        color: #000;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .author {
+    margin-top: auto;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
