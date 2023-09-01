@@ -3,74 +3,210 @@ body{
 }
 
 
-/* FOOTER CSS*/
-.logos{
-    gap: 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.logo{
-    width: 149px;
-    height: 26px;
-}
-
-footer{
-    background-color: #1E1E1E;
-    height: 100%;
+/* hero banner  */
+.herobanner{
     width: 100%;
-    padding: 40px 0  0 0;
+    height: 626px;
+    background-color: #1E1E1E;
 }
 
-.lists{
-    display: flex;
-    gap: 100px;
+.herotext{
+    padding: 182.46px 0;
 }
 
-.listtitle{
+.herobanner h1{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.herobanner p{
+    color: #FFF;
     font-size: 18px;
-    color: #ffff;
-    list-style: none;
-    margin-bottom: 25px;
-    font-weight: 700;
-    width: max-content;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    padding: 28px 0;
 }
 
-.listitem{
-    color: #ffff;
-    list-style: none;
-    font-size: 14px;
-    margin-bottom: 16px;
+.herobanner a{
+    text-decoration: none;
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 400;
 }
 
-.footlogo{
-    height: 35px;
-    width: 35px;
-}
-
-.socials{
-    gap: 20px;
+.herobanner button{
     display: flex;
+    height: 41px;
+    padding: 10px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(30, 30, 30, 0.00);
+    background: #FFF;   
 }
 
-.footlink{
-    color: #ffff;
+.herotext img{
+    padding-left: 10px;
+}
+
+.heroimages {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+/* end of hero banner */
+
+
+/* my profile css */
+
+.profile{
+    background-color: #F2F4F5;
+}
+
+.profilenavigation{
+    padding: 44px 0 84px 0;
+    background-color: #FFF;
+    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.profilepic{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pp{
+    border-radius: 120px;
+    width: 187px;
+}
+
+.profile h2{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.profile a{
+    color: #1E1E1E;
     text-decoration: none;
 }
 
-.copyright{
-    display:flex ;
-    width: 100%;
-    background-color: #ffff;
-    color:#1E1E1E ;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 0;
+.profilenav{
+    padding-top: 58px;
 }
 
-/* END OF FOOTER CSS*/
+.profile h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+
+.profileinfo{
+    margin: 44px 0 0 0;
+
+}
+
+.profile h1{
+    display: block;
+    padding: 0;
+    height: 56pxS;
+}
+
+.profileform{
+    margin: 47px 0;
+}
+
+.profile .label{
+    color: #9F9E9E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.profile .place{
+    margin-bottom: 45px;
+    width: 100%;
+    max-height: 36px;
+    color: #1E1E1E;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9F9E9E;
+    background-color: #F2F4F5 ;
+}
+
+.place::placeholder{
+    color: #1E1E1E;
+}
+
+
+
+.profilebtn{
+    display: inline-flex;
+    width: 95px;
+    height: 40px;
+    min-width: 95px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #CFCFCF;
+    margin-right: 20px;
+    border: none;
+}
+/* end of my profile css */
+
+/* rented books css */
+
+.Rented-books{
+    background-color: #F2F4F5;
+}
+
+.Rented-books a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.Rented-books h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+.Rented-books h1{
+    display: block;
+    padding: 0;
+    height: 56pxS;
+}
+
+table{
+    margin: 50px 0 35px 0;
+}
+/* end of rented books css */
 
 
 /*BLOG CSS*/
@@ -210,3 +346,79 @@ h3{
     line-height: normal;
     margin-left: 20px;
 }
+
+
+
+
+/* END OF blogs page numbers switches*/
+
+
+/* FOOTER CSS*/
+.logos{
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 149px;
+    height: 26px;
+}
+
+footer{
+    background-color: #1E1E1E;
+    height: 100%;
+    width: 100%;
+    padding: 40px 0  0 0;
+}
+
+.lists{
+    display: flex;
+    gap: 100px;
+}
+
+.listtitle{
+    font-size: 18px;
+    color: #ffff;
+    list-style: none;
+    margin-bottom: 25px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.listitem{
+    color: #ffff;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.footlogo{
+    height: 35px;
+    width: 35px;
+}
+
+.socials{
+    gap: 20px;
+    display: flex;
+}
+
+.footlink{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.copyright{
+    display:flex ;
+    width: 100%;
+    background-color: #ffff;
+    color:#1E1E1E ;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+/* END OF FOOTER CSS*/
+
