@@ -14,12 +14,15 @@ nav{
     padding-bottom: 27px;
 }
 
-/* main */
+/* index (genre and themes main */
 .text{
     display: flex;
     justify-content: space-between;
     color: white;
     margin-bottom: 44px
+}
+.text h2{
+    font-family: 'Rubik' , sans-serif;
 }
 .allbooks{
     padding-top: 92px;
@@ -43,6 +46,7 @@ nav{
 }
 .book-image{
     height: 296px;  
+    width: 183px;
 }
 .available{
     margin: 0px;
@@ -57,9 +61,26 @@ nav{
     bottom: 0px;
     left: 0px;
 }
+.booked{
+    margin: 0px;
+    padding: 8px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #C22A34;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
 .imagetext{
     color: white;
     margin-top: 10px;
+}
+.imagepart{
+    width: 183px;
+
 }
 .bookauthor{
     font-size: 13px;
@@ -104,12 +125,12 @@ nav{
 }
 .genrecoverpicture{
     height: 100%;
-    border-radius: 100px;
+    border-radius: 108px;
     width: 100%;
 }
 .genrecover{
     border: 1px dashed rgba(30, 30, 30, 0.40);
-    border-radius: 100px;
+    border-radius: 119px;
     width: 100%;
     height: 348px;
     padding: 10px;
@@ -143,21 +164,24 @@ nav{
     height: 42px;
     background-color: #DFDFDF;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
+    border: none;
+    padding-left: 7px;
+    border: none;
+    outline-style: none;
 }
 .allbooks-searchinside{
     display: flex;
     gap: 10px;
     padding: 10px 0px 10px 10px;
 }
-.allbooks-searchicon{
-    width: 24px;
-    height: 24px;
-    color: #1E1E1E;
-}
 .allbooks-searchtitle{
     font-size: 14px;
     color: #1E1E1E;
+}
+.allbooks-searchicon{
+    width: 24px;
+    padding-bottom: 3px;
 }
 .allbooks-collection{
     display: flex;
@@ -202,13 +226,28 @@ nav{
     height: 40px;
     width: 40px;
 }
+.pagination-item-filled{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.pagination-item-filled a{
+    text-decoration: none;
+    list-style: none;
+    color: #1E1E1E;
+    align-items: center;
+    padding: 15px;
+    line-height: 37px;
+}
 .pagination-item a{
     text-decoration: none;
     list-style: none;
     color: white;
     align-items: center;
     padding: 15px;
-    line-height: 40px;
+    line-height: 37px;
 }
 .previous a{
     text-decoration: none;
@@ -400,6 +439,9 @@ position: relative;
 .genrepagination-item{
     color: #1E1E1E;
 }
+ul{
+    align-items: center;
+}
 .genrebooksone-pagination ul{
     display: flex;
     justify-content: center;
@@ -417,6 +459,22 @@ position: relative;
     color: #1E1E1E;
     align-items: center;
     padding: 15px;
+    line-height: 37px;
+}
+.genrepagination-itemfilled{
+    border: 1px solid #1E1E1E;
+    background-color: #1E1E1E;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.genrepagination-itemfilled a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    align-items: center;
+    padding: 15px;
+    line-height: 37px;
 }
 .genre-previous a{
     text-decoration: none;
@@ -590,7 +648,7 @@ position: relative;
     color: white;
 }
 
-/* blog */
+/* blog description */
 .blogtopic{
     display: flex;
     justify-content: center;
@@ -601,6 +659,8 @@ position: relative;
     font-size: 32px;
     color: #1E1E1E;
     text-align: center;
+    font-family: 'Rubik' sans-serif;
+    font-weight: 501px;
 }
 .blogsubheading{
     font-size: 16px;
@@ -610,4 +670,6 @@ position: relative;
 .blogdesc-img{
     width: 100%;
     height: 324px;
+    margin-top: 30px;
+    margin-bottom: 37px;
 }
