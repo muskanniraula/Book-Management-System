@@ -589,3 +589,25 @@ position: relative;
 .map-text{
     color: white;
 }
+
+/* blog */
+.blogtopic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.blogheading{
+    font-size: 32px;
+    color: #1E1E1E;
+    text-align: center;
+}
+.blogsubheading{
+    font-size: 16px;
+    color: #3D3D3D;
+    text-align: center;
+}
+.blogdesc-img{
+    width: 100%;
+    height: 324px;
+}
