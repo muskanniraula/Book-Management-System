@@ -145,7 +145,7 @@ border: none;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("../images/minus.png");
+    background-image:url("../images/minus.png") ;
     border: none;
 
     box-shadow: none;
@@ -245,6 +245,10 @@ border: none;
     line-height: 142.857%;   
     padding-right: 20px; 
 }
+.about-banner-image
+{
+    margin-bottom:-40px;
+} 
 
 .secbtn{
     background: #1E1E1E;
@@ -322,4 +326,95 @@ footer{
     justify-content: center;
     padding: 4px 0;
 }
+.mission h4
+{
+    margin: 15px 0;
+}
+.our_mission
+{
+    background-color: #F2F2F2;
+} 
+.mission p
+{
+    color: #3D3D3D;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.number
+{
+    color: #000;
+font-family: PT Serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 5.76px;
+}
+@media screen and (max-width:768px) {
+    .about-banner
+    {
+        justify-content: center;
+        text-align: center;
+    }
 
+    .banner-p
+    {
+        font-size: 12px;
+    }
+    .faq-banner
+    {
+    
+        justify-content: center;
+        text-align: center;
+    }
+    .faq-banner-content
+    {
+        margin-top: 20px;
+    }
+    
+h3
+{
+font-size: 10px;
+}
+h1
+{
+font-size: 32px;
+}
+h4
+{
+font-size: 10px;
+}
+.faq-about-heading
+{
+    font-size: 16px;
+}
+.mission-heading
+{
+    font-size: 16px;
+
+}
+.mission p 
+{
+    font-size: 12px;
+}
+.faq-about-p
+{
+    font-size: 12px;
+}
+.btn{
+    font-size: 8px;
+}
+/* no use */
+
+.accordion-header {
+    font-size: 16px;
+}
+.accordion-body{
+    font-size: 12px;
+}
+
+}
