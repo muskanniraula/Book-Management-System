@@ -1,0 +1,359 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* background-color:rgba(211, 211, 211, 0.486); */
+
+ }
+
+ /* default page section  */
+ /* -------------------------------------------------------------------------------------------------- */
+ .main-section {
+     padding-left: 40px;
+     padding-right: 40px;
+     background-color: #f5f5f5;
+ }
+
+ .wrapper{
+    background-color: #fff;
+    padding: 53px 120px 120px ;
+ }
+ /* -------------------- */
+ /* main section body  */
+ .book-title {
+     margin-top: 90px;
+     background-color: #f5f5f5;
+     margin-top: 75px;
+
+
+ }
+
+ .book-title h1 {
+     color: rgb(26, 25, 25);
+     font-size: 64px;
+     margin-top: 75px;
+     margin-bottom: 30px;
+     margin-left: 25px;
+ }
+
+ .book-title h3 {
+     color: rgb(26, 25, 25);
+     font-size: 22px;
+     margin-bottom: 30px;
+     margin-left: 25px;
+ }
+
+ .book-title p {
+
+     font-size: 16px;
+     font-weight: 400;
+     margin-bottom: 60px;
+     margin-bottom: 45px;
+     margin-left: 25px;
+ }
+
+
+
+
+ /* book image and book save ------------------------------------------------------- */
+
+ .book-img-book-save {
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+ }
+
+ .book-img {
+     width: 400px;
+     height: 495px;
+     margin-top: -400px;
+ }
+
+ .bookmark-save-share {
+     display: flex;
+     border-bottom: 1px solid #94909070;
+ }
+
+
+ .book-now-button {
+     width: 150px;
+     height: 50px;
+     color: white;
+     margin-top: 50px;
+     padding: 5px 10px;
+     align-items: center;
+     border-radius: 31px;
+     background: #1E1E1E;
+     font-size: 20px;
+     margin-top: -15px;
+ }
+
+ i.fa.fa-bookmark-o {
+     margin-top: 65px;
+     text-align: right;
+     font-size: 24px;
+     margin-top: -10px;
+ }
+ i.fa.fa-share-alt {
+     margin-top: 65px;
+     text-align: left;
+     font-size: 24px;
+     margin-top: -10px;
+ }
+
+
+ /* book description section ---------------------------------------------------*/
+
+ .book-description-and-editors {
+     
+     margin-bottom: 30px;
+ }
+
+ .book-description-and-editors h3 {
+     font-weight: 700;
+     margin-top: 45px;
+     font-size: 22px;
+
+ }
+
+ .book-description-and-editors p {
+     font-weight: 500;
+ }
+
+
+ /* reviews section --------------------------------------------------------- */
+ .reviews-section {
+     margin-top: 20px;
+ }
+
+ .reviews-section h2 {
+     padding-top: 40px;
+     text-align: left;
+     margin-bottom: 20px;
+ }
+
+ .new-comment {
+
+     border: 1px solid #e8e2e2;
+     border-radius: 8px;
+     
+ }
+
+ .profile-pic{
+    width: 70px;
+ }
+
+ .review-send {
+     align-self: flex-end;
+     border-radius: 10%;
+     padding: 4px 15px 3px;
+     border: #b8aeae;
+    
+ }
+ 
+
+ .ratings-send{
+    display: flex;
+    justify-content: space-between;
+ }
+ .review-send{
+    /* transform: translate(-50%, -50%); */
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f19d;
+  color: black;
+  font-size: 16px;
+  padding: 8px  25px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 3px;
+    
+ }
+ /* previous reviews section  */
+
+ .previous-section {
+     margin-top: 80px;
+     margin-bottom: 30px;
+
+ }
+
+ .previous-comment-box {
+     border: 1px solid #e8e2e2;
+     border-radius: 8px;
+ }
+
+ .previous-comment-box {
+     margin-bottom: 40px;
+     padding-top: 30px;
+ }
+
+.profile-pic-previous{
+    width: 60px;
+}
+
+ .previous-comment-box .fa-star {
+     font-size: 15px;
+     color: #fbe70b;
+ }
+
+ .user-name{
+    font-size: 16px;
+ }
+
+ /* Style the left and right horizontal lines---------------------------------------------------- */
+ .hr-left,
+ .hr-right {
+     border: 1px solid #b8aeae;
+     margin-top: 10px;
+ }
+
+ /* Style the "Load More" button */
+ .load-more-button {
+     background-color: white;
+     color: #100f0f;
+     border: none;
+     padding: 5px 10px;
+     cursor: pointer;
+     font-size: 18px;
+     width: 100%;
+     margin-top: -10px;
+ }
+
+ .load-more-button:hover {
+     background-color: #0056b3;
+ }
+/* Styles for screens smaller than 480px (typical for mobile devices) */
+@media (max-width: 480px) {
+    /* Your CSS rules for mobile screens go here */
+    body {
+      font-size: 16px; /* Example: Adjust font size for readability on mobile screens */
+    }
+  
+    .container {
+      width: 100%; /* Example: Make containers full width on mobile screens */
+      padding: 10px; /* Example: Adjust padding for mobile screens */
+    }
+
+    .book-title h1 {
+        color: rgb(26, 25, 25);
+        font-size: 25px;
+        margin-top: 75px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+    .book-img {
+        width: 250px;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 10px;
+        
+    }
+  
+    /* Add more styles specific to mobile screens as needed */
+  }
+
+  @media (max-width: 768px) {
+    /* Your CSS rules for mobile screens go here */
+    body {
+      font-size: 16px; /* Example: Adjust font size for readability on mobile screens */
+    }
+  
+    .container {
+      width: 100%; /* Example: Make containers full width on mobile screens */
+      padding: 10px; /* Example: Adjust padding for mobile screens */
+    }
+
+    .book-title h1 {
+        color: rgb(26, 25, 25);
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+    .book-title p {
+
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 60px;
+        margin-bottom: 45px;
+        margin-left: 25px;
+    }
+    .book-img {
+        width: auto;
+        height: 10px;
+        margin-top: 0;
+        /* margin-bottom: 30px; */
+        /* padding-left: 0px; */
+        /* padding-right: 10px; */
+        
+    }
+  
+    /* Add more styles specific to mobile screens as needed */
+  }
+
+  
+  @media (max-width: 1024px) {
+    /* Your CSS rules for mobile screens go here */
+    body {
+      font-size: 16px; /* Example: Adjust font size for readability on mobile screens */
+    }
+  
+    .container {
+      width: 100%; /* Example: Make containers full width on mobile screens */
+      padding: 10px; /* Example: Adjust padding for mobile screens */
+    }
+
+    .book-title h1 {
+        color: rgb(26, 25, 25);
+        font-size: 20px;
+        margin-top: 75px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+    .book-img {
+        width: 100px;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 10px;
+        
+    }
+  
+    /* Add more styles specific to mobile screens as needed */
+  }
+  
+
+
+  @media (max-width: 1399px) {
+    /* Your CSS rules for mobile screens go here */
+    body {
+      font-size: 16px; /* Example: Adjust font size for readability on mobile screens */
+    }
+  
+    .container {
+      width: 100%; /* Example: Make containers full width on mobile screens */
+      padding: 10px; /* Example: Adjust padding for mobile screens */
+    }
+
+    .book-title h1 {
+        color: rgb(26, 25, 25);
+        font-size: 20px;
+        margin-top: 75px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+    .book-img {
+        width: 100px;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 10px;
+        
+    }
+  
+    /* Add more styles specific to mobile screens as needed */
+  }
+  
