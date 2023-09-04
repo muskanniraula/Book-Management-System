@@ -113,7 +113,9 @@ body{
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    padding: 15px 0 15px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -125,7 +127,7 @@ body{
 .profile h1{
     display: block;
     padding: 0;
-    height: 56pxS;
+    height: 56px;
 }
 
 .profileform{
@@ -200,14 +202,210 @@ body{
 .Rented-books h1{
     display: block;
     padding: 0;
-    height: 56pxS;
+    height: 56px;
 }
 
 table{
+    width: 100%;
     margin: 50px 0 35px 0;
 }
+
+th{
+    padding-bottom: 40px ;
+    border-bottom: 1px solid #7F7F7F;
+    padding-right: 20px;
+    color: #1E1E1E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+td{
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #7F7F7F;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /* end of rented books css */
 
+/* booked books css */
+
+.Booked-books{
+    background-color: #F2F4F5;
+}
+
+.Booked-books a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.Booked-books h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+.Booked-books h1{
+    display: block;
+    padding: 0;
+    height: 56px;
+}
+
+/*end of booked books css */
+
+/* booked books edit css */
+.Booked-books-edit{
+    background-color: #F2F4F5;
+}
+
+.Booked-books-edit a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.Booked-books-edit h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+.Booked-books-edit h1{
+    display: block;
+    padding: 40px 0 0 0 ;
+    height: 56px;
+}
+
+.bookingedit{
+    padding-top: 175px;
+}
+
+.bookingedit h4{
+    color: #9F9E9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.bookingedit h3{padding: 70px 0;
+    color: #3D3D3D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0;
+}
+
+.editform{
+    padding: 70px 0;
+    display: flex;
+    gap: 50px;
+}
+
+.editform input{
+    border: 1px solid #9F9E9E;
+    border-radius: 10px;
+    padding: 10px 16px;
+    width: 285px;
+}
+
+.input-icon{
+    position: absolute;
+    right: 13px;
+    top: 7px;
+    bottom: 8px;
+}
+
+input[type="date"] {
+    color: #9F9E9E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('../images/calendar.svg') no-repeat center/80%;
+    color: #9F9E9E ;
+}
+
+.editbtn{
+    display: inline-flex;
+    color: #FFF;
+    width: 95px;
+    height: 40px;
+    min-width: 95px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #1E1E1E;
+    margin-right: 20px;
+    border: none;
+}
+/* end of booked books edit css */
+
+
+/* saved books css */
+.Saved-books{
+    background-color: #F2F4F5;
+}
+
+.Saved-books a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.Saved-books h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+.Saved-books h1{
+    display: block;
+    padding: 0;
+    height: 56pxS;
+}
+
+/* end of saved books */
+
+
+/* book history css */
+.bookhistory{
+    background-color: #F2F4F5;
+}
+
+.bookhistory a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.bookhistory h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 0 15px 110px;
+}
+
+.bookhistory h1{
+    display: block;
+    padding: 0;
+    height: 56pxS;
+}
+/* end of book history css */
 
 /*BLOG CSS*/
 h1{
@@ -374,7 +572,7 @@ footer{
 
 .lists{
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 .listtitle{
