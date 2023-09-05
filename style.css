@@ -673,3 +673,123 @@ position: relative;
     margin-top: 30px;
     margin-bottom: 37px;
 }
+@media (min-width:576px){
+    /* contact us */
+.contactus-titleheading{
+    font-size: 28px;
+}
+.addresscontainer{
+    width: 200px;  
+}
+.phonecontainer{
+    width: 200px;
+}
+.emailcontainer{
+    width: 200px;
+}
+.contentheading{
+    font-size: 12px;
+}
+
+/* privacy */
+.privacypolicy{
+    height: 300px;
+}
+.privacytop{
+    padding: 50px 50px;
+}
+.overlay{
+    height: 300px;
+}
+.privacy-info{
+    font-size: 16px;
+}
+.privacy-heading{
+    font-size: 32px;
+}
+.privacy-paragraph{
+    font-size: 15px;
+}
+
+/* genre and themes */
+.allbooks{
+    height: fit-content;
+}
+.text{
+    padding: 0px 35px;
+}
+.midpart{
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.genrecolumn{
+    width: auto;
+}
+}
+
+
+
+@media (min-width:768px){
+    /* contact us */
+.contactus-titleheading{
+    font-size: 28px;
+}
+.addresscontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.phonecontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.emailcontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.contentheading{
+    font-size: 14px;
+}
+}
+@media (min-width:992px){
+    /* contact us */
+.contactus-titleheading{
+    font-size: 32px;
+}
+.addresscontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.phonecontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.emailcontainer{
+    width: 220px;
+    padding: 30px 30px;
+}
+.contentheading{
+    font-size: 14px;
+}
+
+/* privacy */
+.privacytop{
+    padding: 50px 150px;
+}
+.privacy-heading{
+    font-size: 32px;
+}
+.privacy-paragraph{
+    font-size: 16px;
+}
+
+}
+@media (min-width:1400px)
+{
+    
+    .privacytop{
+        padding: 50px 200px;
+    }
+}
+
+
