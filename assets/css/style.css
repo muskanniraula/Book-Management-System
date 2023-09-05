@@ -1,622 +1,497 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+table {
+  width: 100%;
+  margin: 50px 0 35px 0;
+}
+
+th {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #7F7F7F;
+  padding-right: 20px;
+  color: #1E1E1E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+td {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid #7F7F7F;
+  color: #3D3D3D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.herobanner {
+  width: 100%;
+  height: 626px;
+  background-color: #1E1E1E;
+}
+.herobanner .herotext {
+  padding: 182.46px 0;
+}
+.herobanner .herotext h1 {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+.herobanner .herotext p {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 28px 0;
+}
+.herobanner .herotext button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 41px;
+  padding: 10px 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgba(30, 30, 30, 0);
+  background: #FFF;
+}
+.herobanner .herotext button a {
+  text-decoration: none;
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.herobanner .herotext button img {
+  padding-left: 10px;
+}
+.herobanner .heroimages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+footer {
+  background-color: #1E1E1E;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+footer .logos {
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .logos .logo {
+  width: 149px;
+  height: 26px;
+}
+footer .logos .socials {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .logos .socials .footlogo {
+  height: 35px;
+  width: 35px;
+}
+footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .lists .listtitle {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+  margin-bottom: 25px;
+  font-weight: 700;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .lists .listitem {
+  color: white;
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+footer .lists .listitem .footlink {
+  color: white;
+  text-decoration: none;
+}
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: #1E1E1E;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 0;
+}
+
+.mainblog h1 {
+  color: #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 44px 0 70px 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.mainblog .blogimg1 {
+  height: 347px;
+  width: 100%;
+}
+.mainblog .blogcont {
+  padding-left: 9px;
+  width: 590px;
+}
+.mainblog .blogcont h2 {
+  color: #1E1E1E;
+  font-size: 32px;
+  font-weight: 500;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.mainblog .blogcont .blog1pag {
+  color: #3D3D3D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 138.889%;
+  font-style: normal;
+  margin: 25px 0;
+  width: 100%;
+}
+.mainblog .blogcont .bigbtn {
+  width: 168px;
+  border: 0;
+  border-radius: 5px;
+  background: #1E1E1E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 12px 0;
+}
+.mainblog .blogcont .bigbtn .blogsancor {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.blogs {
+  margin: 70px 0;
+}
+.blogs .eachblog {
+  margin: 0 0 70px 0;
+}
+.blogs .eachblog .blogsimage2 {
+  width: 100%;
+}
+.blogs .eachblog h3 {
+  color: #1E1E1E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 15px 0 8px 0;
+}
+.blogs .eachblog .pubdate {
+  color: #7F7F7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.blogs .eachblog .blogconte {
+  color: #3D3D3D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  padding-right: 20px;
+}
+.blogs .eachblog .secbtn {
+  background: #1E1E1E;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.blogs .eachblog .secbtn .blogsancor {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.blogspagebtn {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 27px;
+}
+.blogspagebtn .pagestn {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  border: 2px solid #1E1E1E;
+}
+.blogspagebtn .pagestn .pagesbtnancor {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+.blogspagebtn .paginationext {
+  text-decoration: none;
+  color: #3D3D3D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.Booked-books {
+  background-color: #F2F4F5;
+}
+.Booked-books .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Booked-books .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Booked-books .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.Booked-books .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.Booked-books .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+.Booked-books .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.Booked-books .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Booked-books .profileinfo {
+  margin: 44px 0 0 0;
+}
+
+.profile {
+  background-color: #F2F4F5;
+}
+.profile .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.profile .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.profile .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.profile .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.profile .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+.profile .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.profile .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.profile .profileinfo {
+  margin: 44px 0 0 0;
+}
+.profile .profileinfo h1 {
+  display: block;
+  padding: 0;
+  height: 56px;
+}
+.profile .profileinfo .profileform {
+  margin: 47px 0;
+}
+.profile .profileinfo .profileform .label {
+  color: #9F9E9E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profile .profileinfo .profileform .place {
+  margin-bottom: 45px;
+  width: 100%;
+  max-height: 36px;
+  color: #1E1E1E;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9F9E9E;
+  background-color: #F2F4F5;
+}
+.profile .profileinfo .profileform .place::-webkit-input-placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profileform .place::-moz-placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profileform .place:-ms-input-placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profileform .place::-ms-input-placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profileform .place::placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profilebtn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 95px;
+  height: 40px;
+  min-width: 95px;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #CFCFCF;
+  margin-right: 20px;
+  border: none;
 }
-
-
-/* hero banner  */
-.herobanner{
-    width: 100%;
-    height: 626px;
-    background-color: #1E1E1E;
-}
-
-.herotext{
-    padding: 182.46px 0;
-}
-
-.herobanner h1{
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
-}
-
-.herobanner p{
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    padding: 28px 0;
-}
-
-.herobanner a{
-    text-decoration: none;
-    color: #1E1E1E;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.herobanner button{
-    display: flex;
-    height: 41px;
-    padding: 10px 32px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid rgba(30, 30, 30, 0.00);
-    background: #FFF;   
-}
-
-.herotext img{
-    padding-left: 10px;
-}
-
-.heroimages {
-    display: flex;
-    align-items: center;
-    padding: 80px 0;
-}
-/* end of hero banner */
-
-
-/* my profile css */
-
-.profile{
-    background-color: #F2F4F5;
-}
-
-.profilenavigation{
-    padding: 44px 0 84px 0;
-    background-color: #FFF;
-    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.10);
-}
-
-.profilepic{
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.pp{
-    border-radius: 120px;
-    width: 187px;
-}
-
-.profile h2{
-    color: #1E1E1E;
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-}
-
-.profile a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.profilenav{
-    padding-top: 58px;
-}
-
-.profile h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.profileinfo{
-    margin: 44px 0 0 0;
-
-}
-
-.profile h1{
-    display: block;
-    padding: 0;
-    height: 56px;
-}
-
-.profileform{
-    margin: 47px 0;
-}
-
-.profile .label{
-    color: #9F9E9E;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-.profile .place{
-    margin-bottom: 45px;
-    width: 100%;
-    max-height: 36px;
-    color: #1E1E1E;
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #9F9E9E;
-    background-color: #F2F4F5 ;
-}
-
-.place::placeholder{
-    color: #1E1E1E;
-}
-
-
-
-.profilebtn{
-    display: inline-flex;
-    width: 95px;
-    height: 40px;
-    min-width: 95px;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #CFCFCF;
-    margin-right: 20px;
-    border: none;
-}
-/* end of my profile css */
-
-/* rented books css */
-
-.Rented-books{
-    background-color: #F2F4F5;
-}
-
-.Rented-books a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.Rented-books h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 15px 0 15px 110px;
-}
-
-.Rented-books h1{
-    display: block;
-    padding: 0;
-    height: 56px;
-}
-
-table{
-    width: 100%;
-    margin: 50px 0 35px 0;
-}
-
-th{
-    padding-bottom: 40px ;
-    border-bottom: 1px solid #7F7F7F;
-    padding-right: 20px;
-    color: #1E1E1E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-}
-
-td{
-    padding: 20px 20px 20px 0;
-    border-bottom: 1px solid #7F7F7F;
-    color: #3D3D3D;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* end of rented books css */
-
-/* booked books css */
-
-.Booked-books{
-    background-color: #F2F4F5;
-}
-
-.Booked-books a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.Booked-books h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 15px 0 15px 110px;
-}
-
-.Booked-books h1{
-    display: block;
-    padding: 0;
-    height: 56px;
-}
-
-/*end of booked books css */
-
-/* booked books edit css */
-.Booked-books-edit{
-    background-color: #F2F4F5;
-}
-
-.Booked-books-edit a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.Booked-books-edit h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 15px 0 15px 110px;
-}
-
-.Booked-books-edit h1{
-    display: block;
-    padding: 40px 0 0 0 ;
-    height: 56px;
-}
-
-.bookingedit{
-    padding-top: 175px;
-}
-
-.bookingedit h4{
-    color: #9F9E9E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.bookingedit h3{padding: 70px 0;
-    color: #3D3D3D;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1;
-    padding: 0;
-}
-
-.editform{
-    padding: 70px 0;
-    display: flex;
-    gap: 50px;
-}
-
-.editform input{
-    border: 1px solid #9F9E9E;
-    border-radius: 10px;
-    padding: 10px 16px;
-    width: 285px;
-}
-
-.input-icon{
-    position: absolute;
-    right: 13px;
-    top: 7px;
-    bottom: 8px;
-}
-
-input[type="date"] {
-    color: #9F9E9E;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url('../images/calendar.svg') no-repeat center/80%;
-    color: #9F9E9E ;
-}
-
-.editbtn{
-    display: inline-flex;
-    color: #FFF;
-    width: 95px;
-    height: 40px;
-    min-width: 95px;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #1E1E1E;
-    margin-right: 20px;
-    border: none;
-}
-/* end of booked books edit css */
-
-
-/* saved books css */
-.Saved-books{
-    background-color: #F2F4F5;
-}
-
-.Saved-books a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.Saved-books h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 15px 0 15px 110px;
-}
-
-.Saved-books h1{
-    display: block;
-    padding: 0;
-    height: 56pxS;
-}
-
-/* end of saved books */
-
-
-/* book history css */
-.bookhistory{
-    background-color: #F2F4F5;
-}
-
-.bookhistory a{
-    color: #1E1E1E;
-    text-decoration: none;
-}
-
-.bookhistory h3{
-    color: #1E1E1E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 15px 0 15px 110px;
-}
-
-.bookhistory h1{
-    display: block;
-    padding: 0;
-    height: 56pxS;
-}
-/* end of book history css */
-
-/*BLOG CSS*/
-h1{
-    color: #1E1E1E;
-    display: flex;
-    font-family: 'Rubik', sans-serif;
-    font-size: 48px; 
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;    
-    padding: 44px 0 70px 0;
-    margin-bottom: 0;
-    line-height:1 ;
-}
-h2{
-    color: #1E1E1E;
-    font-size: 32px;
-    font-weight: 500;   
-    padding-top: 15px;
-    margin-bottom: 0;
-}
-
-.blogimg1{
-    height: 347px;
-    width: 100%;
-}
-
-.blog1pag{
-    color: #3D3D3D;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 138.889%;
-    font-style: normal;
-    margin: 25px 0;
-
-}
-
-.bigbtn{
-    width: 168px;
-    border: 0;
-    border-radius: 5px;
-    background: #1E1E1E;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 12px 0;
-}
-.blogsancor{
-    text-decoration: none;
-    color: #ffff;
-    font-family: 'Roboto', sans-serif;    
-}
-
-.blogcont{
-    padding-left:9px ;
-    width: 590px;
-}
-
-.blogs{
-    margin: 70px 0;
-}
-
-.blogsimage2{
-    width: 100%;
-}
-
-h3{
-    color: #1E1E1E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    margin: 15px 0 8px 0;
-}
-
-.eachblog{
-    margin: 0 0 70px 0;
-}
-
-.pubdate{
-    color: #7F7F7F;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.blogconte{
-    color: #3D3D3D;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 142.857%;   
-    padding-right: 20px; 
-}
-
-.secbtn{
-    background: #1E1E1E;
-    border-radius: 5px;
-    padding: 10px 20px; 
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    border: none;
-}
-
-/* end of blogs css */
-
-
-/* blogs page numbers switches*/
-.blogspagebtn{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 27px;
-}
-
-.pagestn{
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;    
-    margin-left: 20px;
-    border: 2px solid #1E1E1E;
-}
-
-.pagesbtnancor{
-    text-decoration: none;
-    color: #3D3D3D;    
-}
-
-.paginationext{
-    text-decoration: none;
-    color: #3D3D3D;  
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 20px;
-}
-
-
-
-
-/* END OF blogs page numbers switches*/
-
-
-/* FOOTER CSS*/
-.logos{
-    gap: 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.logo{
-    width: 149px;
-    height: 26px;
-}
-
-footer{
-    background-color: #1E1E1E;
-    height: 100%;
-    width: 100%;
-    padding: 40px 0  0 0;
-}
-
-.lists{
-    display: flex;
-    justify-content: space-between;
-}
-
-.listtitle{
-    font-size: 18px;
-    color: #ffff;
-    list-style: none;
-    margin-bottom: 25px;
-    font-weight: 700;
-    width: max-content;
-}
-
-.listitem{
-    color: #ffff;
-    list-style: none;
-    font-size: 14px;
-    margin-bottom: 16px;
-    font-weight: 400;
-}
-
-.footlogo{
-    height: 35px;
-    width: 35px;
-}
-
-.socials{
-    gap: 20px;
-    display: flex;
-}
-
-.footlink{
-    color: #ffff;
-    text-decoration: none;
-}
-
-.copyright{
-    display:flex ;
-    width: 100%;
-    background-color: #ffff;
-    color:#1E1E1E ;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 0;
-}
-
-/* END OF FOOTER CSS*/
-
