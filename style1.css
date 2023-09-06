@@ -177,13 +177,14 @@
  }
 
  .previous-comment-box {
-     border: 1px solid #e8e2e2;
-     border-radius: 8px;
+     
  }
 
  .previous-comment-box {
      margin-bottom: 40px;
      padding-top: 30px;
+     border: 1px solid #e8e2e2;
+     border-radius: 8px;
  }
 
 .profile-pic-previous{
