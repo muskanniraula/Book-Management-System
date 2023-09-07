@@ -336,16 +336,13 @@ footer{
 
 /* privacy and policy */
 .privacypolicy{
-     /* height: 500px; */
-     /* width: 100%; */
-     background-image: url('openbook.jpg');
+     background-image: url('assets\images\openbook.jpg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      display: flex;
      justify-content: center;
      align-items: center;
-     /* position: relative; */
      margin-bottom: 50px;
 
 }
@@ -673,9 +670,9 @@ position: relative;
     margin-top: 30px;
     margin-bottom: 37px;
 }
-@media (min-width:576px){
+/* @media (min-width:576px){
     /* contact us */
-.contactus-titleheading{
+/* .contactus-titleheading{
     font-size: 28px;
 }
 .addresscontainer{
@@ -689,7 +686,7 @@ position: relative;
 }
 .contentheading{
     font-size: 12px;
-}
+} */ */
 
 /* privacy */
 .privacypolicy{
@@ -726,70 +723,8 @@ position: relative;
 .genrecolumn{
     width: auto;
 }
-}
-
-
-
-@media (min-width:768px){
-    /* contact us */
-.contactus-titleheading{
-    font-size: 28px;
-}
-.addresscontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.phonecontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.emailcontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.contentheading{
-    font-size: 14px;
-}
-}
-@media (min-width:992px){
-    /* contact us */
-.contactus-titleheading{
-    font-size: 32px;
-}
-.addresscontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.phonecontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.emailcontainer{
-    width: 220px;
-    padding: 30px 30px;
-}
-.contentheading{
-    font-size: 14px;
-}
-
-/* privacy */
-.privacytop{
-    padding: 50px 150px;
-}
-.privacy-heading{
-    font-size: 32px;
-}
-.privacy-paragraph{
-    font-size: 16px;
-}
-
-}
-@media (min-width:1400px)
-{
+.book-image{
     
-    .privacytop{
-        padding: 50px 200px;
-    }
 }
-
+}
 

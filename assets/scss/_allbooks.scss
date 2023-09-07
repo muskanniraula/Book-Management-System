@@ -1,0 +1,182 @@
+.booksone {
+    background-color: #1E1E1E;
+
+    
+    .allbooks-topheading {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 58px;
+    }
+
+    .searchsection {
+        display: flex;
+        margin-top: 29px;
+        margin-bottom: 44px;
+
+        .allbooks-searchbg {
+            height: 42px;
+            background-color: #DFDFDF;
+            border-radius: 5px;
+            width: 95%;
+            border: none;
+            padding-left: 7px;
+            border: none;
+            outline-style: none;
+
+            .allbooks-searchicon {
+                width: 24px;
+                padding-bottom: 3px;
+            }
+        }
+
+        .right p{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 20px;
+
+            .sortby {
+                color: white;
+                font-size: 14px;
+                margin: 0;
+
+                .dropdown {
+                    height: 42px;
+                    background-color: #DFDFDF;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 180px;
+
+                    .dropdown-menulist {
+                        font-size: 14px;
+                        color: #1E1E1E;
+                        padding-left: 10px;
+                        text-decoration: none;
+                    }
+
+                    .arrow-down {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 10px;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .allbooks-collection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 71.25px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .imagepart {
+            width: 183px;
+
+            .tag {
+                position: relative;
+
+                .book-image {
+                    height: 296px;
+                    width: 183px;
+
+                    .available {
+                        margin: 0px;
+                        padding: 8px;
+                        align-items: center;
+                        display: inline-flex;
+                        justify-content: center;
+                        background-color: #5CA202;
+                        font-size: 13px;
+                        color: white;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+
+                    .booked {
+                        margin: 0px;
+                        padding: 8px;
+                        align-items: center;
+                        display: inline-flex;
+                        justify-content: center;
+                        background-color: #C22A34;
+                        font-size: 13px;
+                        color: white;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+                }
+            }
+
+            .imagetext {
+                color: white;
+                margin-top: 10px;
+
+                .bookname {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .bookauthor {
+                    font-size: 13px;
+                }
+            }
+
+
+        }
+    }
+    .allbooksone-pagination ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    
+    .list ul{     
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        .previous a{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+        }
+        .pagination-item {
+            border: 1px solid white;
+            border-radius: 100%;
+            height: 40px;
+            width: 40px;
+        }
+        .pagination-item-filled{
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 100%;
+            height: 40px;
+            width: 40px;
+        }
+        .pagination-item-filled a{
+            text-decoration: none;
+            list-style: none;
+            color: #1E1E1E;
+            align-items: center;
+            padding: 15px;
+            line-height: 37px;
+        }
+        .pagination-item a{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            align-items: center;
+            padding: 15px;
+            line-height: 37px;
+        }
+    }
+}
+
+}
