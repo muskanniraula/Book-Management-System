@@ -17,13 +17,19 @@ footer {
         .socials {
             gap: 20px;
             display: flex;
+            margin-bottom: 50px;
 
             .footlogo {
                 height: 35px;
                 width: 35px;
             }
-
         }
+
+        @media screen and (max-width:425px) {
+            padding-left: 25px;
+        }
+
+        
     }
 
     .lists {
@@ -50,6 +56,11 @@ footer {
                 color: #ffff;
                 text-decoration: none;
             }
+        }
+
+        @media screen and (max-width:425px) {
+            flex-direction: column;
+            gap: 20px;
         }
     }
 

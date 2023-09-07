@@ -306,7 +306,7 @@ td {
     font-weight: 500;
     line-height: 1;
     padding: 0;
-}
+}           
 
 .editform {
     padding: 70px 0;
@@ -519,31 +519,6 @@ h3 {
 
 /* end of blogs css */
 
-@media screen and (max-width: 425px) {
-
-    h2 {
-        color: #1E1E1E;
-        font-size: 20px;
-        font-weight: 500;
-        padding-top: 15px;
-        margin-bottom: 0;
-    }
-
-    .blogcont {
-        padding-left: 9px;
-        width: 100%;
-    }
-
-    .blog1pag {
-        color: #3D3D3D;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 138.889%;
-        font-style: normal;
-        margin: 25px 0;
-        /* width: 70%; */
-    }
-}
 
 
 /* blogs page numbers switches*/

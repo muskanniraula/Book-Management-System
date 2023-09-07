@@ -1,35 +1,10 @@
-body{
-    font-family: 'Roboto', sans-serif;
-
-}
-
-table {
-    width: 100%;
-    margin: 50px 0 35px 0;
-}
-th {
-    padding-bottom: 40px;
-    border-bottom: 1px solid #7F7F7F;
-    padding-right: 20px;
-    color: #1E1E1E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-}
-
-td {
-    padding: 20px 20px 20px 0;
-    border-bottom: 1px solid #7F7F7F;
-    color: #3D3D3D;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
+@import 'universal';
 @import 'herobanner';
-@import 'footer';
 @import 'blog';
-@import 'bookedbooks';
 @import 'profile';
+@import 'bookedbooks';
+@import 'bookededit';
+@import 'bookedhistory';
+@import 'rentedbooks';
+@import 'savedbooks';
+@import 'footer';

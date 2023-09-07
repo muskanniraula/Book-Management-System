@@ -1,4 +1,4 @@
-.Booked-books {
+.bookhistory {
     background-color: #F2F4F5;
 
     .profilenavigation {
@@ -30,7 +30,7 @@
 
         .profilenav {
             padding-top: 58px;
-
+            
             @media (min-width: 768px) {
                 display: block !important;
             }
@@ -55,9 +55,5 @@
                 }
             }
         }
-    }
-
-    .profileinfo {
-        margin: 44px 0 0 0;
     }
 }

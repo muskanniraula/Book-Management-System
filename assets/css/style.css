@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 table {
@@ -30,8 +31,13 @@ td {
 
 .herobanner {
   width: 100%;
-  height: 626px;
+  height: 100%;
   background-color: #1E1E1E;
+}
+@media screen and (max-width: 768px) {
+  .herobanner img {
+    position: relative;
+  }
 }
 .herobanner .herotext {
   padding: 182.46px 0;
@@ -45,6 +51,11 @@ td {
   font-weight: 800;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 425px) {
+  .herobanner .herotext h1 {
+    font-size: 34px;
+  }
 }
 .herobanner .herotext p {
   color: #FFF;
@@ -81,6 +92,16 @@ td {
 .herobanner .herotext button img {
   padding-left: 10px;
 }
+@media screen and (max-width: 425px) {
+  .herobanner .herotext {
+    padding: 14% 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .herobanner .herotext {
+    padding: 72.46px 0;
+  }
+}
 .herobanner .heroimages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,81 +111,22 @@ td {
           align-items: center;
   padding: 80px 0;
 }
-
-footer {
-  background-color: #1E1E1E;
-  height: 100%;
-  width: 100%;
-  padding: 40px 0 0 0;
+@media screen and (max-width: 425px) {
+  .herobanner .heroimages {
+    padding: 0;
+  }
+  .herobanner .heroimages img {
+    display: none;
+  }
 }
-footer .logos {
-  gap: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-footer .logos .logo {
-  width: 149px;
-  height: 26px;
-}
-footer .logos .socials {
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-footer .logos .socials .footlogo {
-  height: 35px;
-  width: 35px;
-}
-footer .lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer .lists .listtitle {
-  font-size: 18px;
-  color: white;
-  list-style: none;
-  margin-bottom: 25px;
-  font-weight: 700;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-footer .lists .listitem {
-  color: white;
-  list-style: none;
-  font-size: 14px;
-  margin-bottom: 16px;
-  font-weight: 400;
-}
-footer .lists .listitem .footlink {
-  color: white;
-  text-decoration: none;
-}
-footer .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: white;
-  color: #1E1E1E;
-  font-weight: 500;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 4px 0;
+@media screen and (max-width: 768px) {
+  .herobanner .heroimages img {
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    right: 5%;
+    top: 37%;
+  }
 }
 
 .mainblog h1 {
@@ -189,9 +151,19 @@ footer .copyright {
   height: 347px;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .mainblog .blogimg1 {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainblog .blogimg1 {
+    height: auto;
+  }
+}
 .mainblog .blogcont {
   padding-left: 9px;
-  width: 590px;
+  width: 100%;
 }
 .mainblog .blogcont h2 {
   color: #1E1E1E;
@@ -199,6 +171,15 @@ footer .copyright {
   font-weight: 500;
   padding-top: 15px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 425px) {
+  .mainblog .blogcont h2 {
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
 }
 .mainblog .blogcont .blog1pag {
   color: #3D3D3D;
@@ -208,6 +189,16 @@ footer .copyright {
   font-style: normal;
   margin: 25px 0;
   width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .mainblog .blogcont .blog1pag {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 138.889%;
+    font-style: normal;
+    margin: 25px 0;
+  }
 }
 .mainblog .blogcont .bigbtn {
   width: 168px;
@@ -223,6 +214,17 @@ footer .copyright {
   text-decoration: none;
   color: white;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 425px) {
+  .mainblog .blogcont .bigbtn {
+    background: #1E1E1E;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+  }
 }
 
 .blogs {
@@ -304,70 +306,6 @@ footer .copyright {
   margin-left: 20px;
 }
 
-.Booked-books {
-  background-color: #F2F4F5;
-}
-.Booked-books .profilenavigation {
-  padding: 44px 0 84px 0;
-  background-color: #FFF;
-  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
-}
-.Booked-books .profilenavigation .profilepic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.Booked-books .profilenavigation .profilepic .pp {
-  border-radius: 120px;
-  width: 187px;
-}
-.Booked-books .profilenavigation .profilepic h2 {
-  color: #1E1E1E;
-  text-align: center;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  padding-top: 15px;
-}
-.Booked-books .profilenavigation .profilenav {
-  padding-top: 58px;
-}
-.Booked-books .profilenavigation .profilenav h3 {
-  color: #1E1E1E;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 15px 0;
-}
-.Booked-books .profilenavigation .profilenav h3 a {
-  color: #1E1E1E;
-  text-decoration: none;
-}
-.Booked-books .profileinfo {
-  margin: 44px 0 0 0;
-}
-
 .profile {
   background-color: #F2F4F5;
 }
@@ -407,6 +345,14 @@ footer .copyright {
 }
 .profile .profilenavigation .profilenav {
   padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .profile .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.profile .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
 }
 .profile .profilenavigation .profilenav h3 {
   color: #1E1E1E;
@@ -494,4 +440,549 @@ footer .copyright {
   background: #CFCFCF;
   margin-right: 20px;
   border: none;
+}
+
+.Booked-books {
+  background-color: #F2F4F5;
+}
+.Booked-books .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Booked-books .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Booked-books .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.Booked-books .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.Booked-books .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .Booked-books .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.Booked-books .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.Booked-books .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.Booked-books .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Booked-books .profileinfo {
+  margin: 44px 0 0 0;
+}
+
+.Booked-books-edit {
+  background-color: #F2F4F5;
+}
+.Booked-books-edit .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Booked-books-edit .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Booked-books-edit .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.Booked-books-edit .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.Booked-books-edit .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .Booked-books-edit .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.Booked-books-edit .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.Booked-books-edit .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.Booked-books-edit .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Booked-books-edit .profileinfo {
+  margin: 44px 0 0 0;
+}
+.Booked-books-edit .profileinfo h1 {
+  display: block;
+  padding: 0;
+  height: 56px;
+}
+.Booked-books-edit .profileinfo .bookingedit {
+  padding-top: 175px;
+}
+@media screen and (max-width768px) {
+  .Booked-books-edit .profileinfo .bookingedit {
+    padding-top: 25px;
+  }
+}
+.Booked-books-edit .profileinfo .bookingedit h4 {
+  color: #9F9E9E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+.Booked-books-edit .profileinfo .bookingedit h3 {
+  padding: 70px 0;
+  color: #3D3D3D;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0;
+}
+.Booked-books-edit .profileinfo .bookingedit .editform {
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 1110px) {
+  .Booked-books-edit .profileinfo .bookingedit .editform {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.Booked-books-edit .profileinfo .bookingedit .editform input {
+  border: 1px solid #9F9E9E;
+  border-radius: 10px;
+  padding: 10px 16px;
+  width: 285px;
+}
+.Booked-books-edit .profileinfo .bookingedit .editform input-icon {
+  position: absolute;
+  right: 13px;
+  top: 7px;
+  bottom: 8px;
+}
+.Booked-books-edit .profileinfo .bookingedit .editform input[type=date] {
+  color: #9F9E9E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Booked-books-edit .profileinfo .bookingedit .editform input[type=date]::-webkit-calendar-picker-indicator {
+  background: url("../images/calendar.svg") no-repeat center/80%;
+  color: #9F9E9E;
+}
+.Booked-books-edit .profileinfo .editbtn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #FFF;
+  width: 95px;
+  height: 40px;
+  min-width: 95px;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #1E1E1E;
+  margin-right: 20px;
+  border: none;
+}
+
+.bookhistory {
+  background-color: #F2F4F5;
+}
+.bookhistory .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.bookhistory .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bookhistory .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.bookhistory .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.bookhistory .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .bookhistory .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.bookhistory .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.bookhistory .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.bookhistory .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.Rented-books {
+  background-color: #F2F4F5;
+}
+.Rented-books .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Rented-books .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Rented-books .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.Rented-books .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.Rented-books .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .Rented-books .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.Rented-books .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.Rented-books .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.Rented-books .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Rented-books .profileinfo {
+  margin: 44px 0 0 0;
+}
+.Rented-books .profileinfo h1 {
+  display: block;
+  padding: 0;
+  height: 56px;
+}
+
+.Saved-books {
+  background-color: #F2F4F5;
+}
+.Saved-books .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Saved-books .profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Saved-books .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.Saved-books .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.Saved-books .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .Saved-books .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.Saved-books .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.Saved-books .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.Saved-books .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Saved-books .profileinfo {
+  margin: 44px 0 0 0;
+}
+.Saved-books .profileinfo h1 {
+  display: block;
+  padding: 0;
+  height: 56px;
+}
+
+footer {
+  background-color: #1E1E1E;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+footer .logos {
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .logos .logo {
+  width: 149px;
+  height: 26px;
+}
+footer .logos .socials {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+footer .logos .socials .footlogo {
+  height: 35px;
+  width: 35px;
+}
+@media screen and (max-width: 425px) {
+  footer .logos {
+    padding-left: 25px;
+  }
+}
+footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .lists .listtitle {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+  margin-bottom: 25px;
+  font-weight: 700;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .lists .listitem {
+  color: white;
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+footer .lists .listitem .footlink {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 425px) {
+  footer .lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: #1E1E1E;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px 0;
 }
