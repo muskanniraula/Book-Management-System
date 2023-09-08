@@ -68,10 +68,10 @@
 
         .bookingedit {
             padding-top: 175px;
-            
 
-            @media screen and (max-width768px) {
-                padding-top: 25px;
+
+            @media screen and (max-width:768px) {
+                padding-top: 30px;
             }
 
             h4 {
@@ -97,8 +97,13 @@
                 display: flex;
                 gap: 50px;
 
+                @media screen and (max-width:768px) {
+                    gap: 24px;
+                    padding: 37px 0;
+                }
+
                 @media screen and (max-width:1110px) {
-                    flex-direction: column;                    
+                    flex-direction: column;
                 }
 
                 input {

@@ -16,7 +16,6 @@ th {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
 }
 
 td {
@@ -39,6 +38,16 @@ td {
     position: relative;
   }
 }
+@media screen and (max-width: 992px) {
+  .herobanner img {
+    position: relative;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .herobanner {
+    width: 100%;
+  }
+}
 .herobanner .herotext {
   padding: 182.46px 0;
 }
@@ -52,7 +61,7 @@ td {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 476px) {
   .herobanner .herotext h1 {
     font-size: 34px;
   }
@@ -119,13 +128,28 @@ td {
     display: none;
   }
 }
+@media screen and (max-width: 1280px) {
+  .herobanner .heroimages img {
+    position: absolute;
+    width: 54%;
+    right: 0%;
+    top: 8%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .herobanner .heroimages img {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 50%;
+  }
+}
 @media screen and (max-width: 768px) {
   .herobanner .heroimages img {
     position: absolute;
-    height: 30%;
-    width: 50%;
+    width: 40%;
     right: 5%;
-    top: 37%;
+    top: 38%;
   }
 }
 
@@ -151,7 +175,7 @@ td {
   height: 347px;
   width: 100%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1399px) {
   .mainblog .blogimg1 {
     height: 100%;
   }
@@ -284,6 +308,11 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 27px;
+}
+@media screen and (max-width: 991px) {
+  .blogspagebtn {
+    margin-top: -70px;
+  }
 }
 .blogspagebtn .pagestn {
   border-radius: 100%;
@@ -593,9 +622,9 @@ td {
 .Booked-books-edit .profileinfo .bookingedit {
   padding-top: 175px;
 }
-@media screen and (max-width768px) {
+@media screen and (max-width: 768px) {
   .Booked-books-edit .profileinfo .bookingedit {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 }
 .Booked-books-edit .profileinfo .bookingedit h4 {
@@ -620,6 +649,12 @@ td {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .Booked-books-edit .profileinfo .bookingedit .editform {
+    gap: 24px;
+    padding: 37px 0;
+  }
 }
 @media screen and (max-width: 1110px) {
   .Booked-books-edit .profileinfo .bookingedit .editform {
@@ -894,6 +929,72 @@ td {
   display: block;
   padding: 0;
   height: 56px;
+}
+
+.profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.profilenavigation .profilepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+.profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
 }
 
 footer {
