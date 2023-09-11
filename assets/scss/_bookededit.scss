@@ -1,62 +1,7 @@
 .Booked-books-edit {
     background-color: #F2F4F5;
 
-    .profilenavigation {
-        padding: 44px 0 84px 0;
-        background-color: #FFF;
-        box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.10);
-
-        .profilepic {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            .pp {
-                border-radius: 120px;
-                width: 187px;
-            }
-
-            h2 {
-                color: #1E1E1E;
-                text-align: center;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 400;
-                font-family: 'Rubik', sans-serif;
-                padding-top: 15px;
-            }
-        }
-
-        .profilenav {
-            padding-top: 58px;
-
-            @media (min-width: 768px) {
-                display: block !important;
-            }
-
-            .collapse:not(.show) {
-                display: none;
-            }
-
-            h3 {
-                color: #1E1E1E;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 15px 0;
-
-                a {
-                    color: #1E1E1E;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
+    
     .profileinfo {
         margin: 44px 0 0 0;
 
