@@ -282,17 +282,6 @@
   margin-top: 29px;
   margin-bottom: 44px;
 }
-@media (max-width: 768px) {
-  .booksone .searchsection {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 .booksone .searchsection .allbooks-searchbg {
   height: 42px;
   background-color: #DFDFDF;
@@ -341,6 +330,10 @@
   font-size: 14px;
   margin: 0;
 }
+.booksone .searchsection .right #dropdown {
+  width: 180px;
+  background-color: #DFDFDF;
+}
 .booksone .searchsection .right .dropdown {
   height: 42px;
   background-color: #DFDFDF;
@@ -356,6 +349,18 @@
           align-items: center;
   width: 180px;
 }
+@media (max-width: 768px) {
+  .booksone .searchsection .right .dropdown {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 768px) {
+  .booksone .searchsection .right .dropdown .dropdowntext {
+    display: none;
+  }
+}
 .booksone .searchsection .right .dropdown .dropdown-menulist {
   font-size: 14px;
   color: #1E1E1E;
@@ -366,6 +371,7 @@
   width: 24px;
   height: 24px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .booksone .allbooks-collection {
   display: -webkit-box;
@@ -392,6 +398,14 @@
 @media (min-width: 1400px) {
   .booksone .allbooks-collection {
     gap: 71.25px;
+  }
+}
+@media (max-width: 462px) {
+  .booksone .allbooks-collection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
   }
 }
 .booksone .allbooks-collection .imagepart {
@@ -482,6 +496,11 @@
   text-align: center;
   font-family: "Rubik" sans-serif;
 }
+@media (max-width: 527px) {
+  .blogtopic .blogheading {
+    font-size: 24px;
+  }
+}
 .blogtopic .blogsubheading {
   font-size: 16px;
   color: #3D3D3D;
@@ -492,6 +511,11 @@
   height: 330px;
   margin-top: 10px;
   margin-bottom: 37px;
+}
+@media (max-width: 527px) {
+  .blogtopic .blogdesc-img {
+    height: auto;
+  }
 }
 @media (max-width: 575.9px) {
   .blogtopic .blogdesc-img {
@@ -533,8 +557,11 @@
   color: #1E1E1E;
 }
 
-.genretop {
-  background-image: url(../images/science.jpg);
+.genre {
+  background: white;
+}
+.genre .genretop {
+  background-color: #1E1E1E;
   height: 318px;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,24 +577,15 @@
           align-items: center;
   margin-bottom: 85px;
   position: relative;
+  z-index: 0;
 }
-.genretop .genretop::before {
-  background-color: #1E1E1E;
-  position: absolute;
-  content: "";
-  z-index: 2;
-  opacity: 60%;
-  height: 100%;
-  width: 100%;
-}
-.genretop .genreoverlay {
-  /* background-color: #1E1E1E; */
+.genre .genretop .genreoverlay {
   width: 100%;
   height: 100%;
 }
-.genretop .genreoverlay .genrename {
+.genre .genretop .genreoverlay .genrename {
   color: white;
-  font-size: 80px;
+  font-size: 100px;
   letter-spacing: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,12 +593,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 76px;
+  margin-top: 56px;
   margin-bottom: 29px;
   z-index: 3;
   position: relative;
 }
-.genretop .genreoverlay .search {
+@media (max-width: 576px) {
+  .genre .genretop .genreoverlay .genrename {
+    font-size: 60px;
+  }
+}
+.genre .genretop .genreoverlay .search {
   background-color: white;
   border: 1px solid white;
   border-radius: 20px;
@@ -591,23 +614,23 @@
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 768px) {
-  .genretop .genreoverlay .search {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-.genretop .genreoverlay .search .genre-search {
+.genre .genretop .genreoverlay .search .genre-search {
+  padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
   outline: none;
-  width: auto;
+  background-color: white;
+  color: #3d3d3d;
+  overflow: hidden;
 }
-
-.allbooks-collection {
+@media (max-width: 576px) {
+  .genre .genretop .genreoverlay .search .genre-search {
+    font-size: 15px;
+  }
+}
+.genre .allbooks-collection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,31 +643,39 @@
   margin-bottom: 50px;
 }
 @media (min-width: 992px) {
-  .allbooks-collection {
+  .genre .allbooks-collection {
     gap: 40px;
   }
 }
 @media (min-width: 1200px) {
-  .allbooks-collection {
+  .genre .allbooks-collection {
     gap: 50px;
   }
 }
 @media (min-width: 1400px) {
-  .allbooks-collection {
+  .genre .allbooks-collection {
     gap: 71.25px;
   }
 }
-.allbooks-collection .imagepart {
+@media (max-width: 576px) {
+  .genre .allbooks-collection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+.genre .allbooks-collection .imagepart {
   width: 183px;
 }
-.allbooks-collection .imagepart .tag {
+.genre .allbooks-collection .imagepart .tag {
   position: relative;
 }
-.allbooks-collection .imagepart .tag .book-image {
+.genre .allbooks-collection .imagepart .tag .book-image {
   height: 296px;
   width: 183px;
 }
-.allbooks-collection .imagepart .tag .available {
+.genre .allbooks-collection .imagepart .tag .available {
   margin: 0px;
   padding: 8px;
   -webkit-box-align: center;
@@ -663,7 +694,7 @@
   bottom: 0px;
   left: 0px;
 }
-.allbooks-collection .imagepart .tag .booked {
+.genre .allbooks-collection .imagepart .tag .booked {
   margin: 0px;
   padding: 8px;
   -webkit-box-align: center;
@@ -682,21 +713,20 @@
   bottom: 0px;
   left: 0px;
 }
-.allbooks-collection .imagepart .imagetext {
-  color: white;
+.genre .allbooks-collection .imagepart .imagetext {
+  color: #1E1E1E;
   margin-top: 10px;
 }
-.allbooks-collection .imagepart .imagetext .genre-bookname {
+.genre .allbooks-collection .imagepart .imagetext .genre-bookname {
   font-size: 15px;
   margin-bottom: 10px;
   color: #1E1E1E;
 }
-.allbooks-collection .imagepart .imagetext .genre-bookauthor {
+.genre .allbooks-collection .imagepart .imagetext .genre-bookauthor {
   font-size: 13px;
   color: #1E1E1E;
 }
-
-.genrebooksone-pagination ul {
+.genre .genrebooksone-pagination ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,7 +738,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.genrebooksone-pagination ul .genre-list ul {
+.genre .genrebooksone-pagination ul .genre-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,19 +749,19 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.genrebooksone-pagination ul .genre-list ul .genre-previous a {
+.genre .genrebooksone-pagination ul .genre-list ul .genre-previous a {
   text-decoration: none;
   list-style: none;
   color: #1E1E1E;
 }
-.genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-item {
+.genre .genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-item {
   color: #1E1E1E;
   border: 1px solid #1E1E1E;
   border-radius: 100%;
   height: 40px;
   width: 40px;
 }
-.genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-item a {
+.genre .genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-item a {
   text-decoration: none;
   list-style: none;
   color: #1E1E1E;
@@ -741,14 +771,14 @@
   padding: 15px;
   line-height: 37px;
 }
-.genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-itemfilled {
+.genre .genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-itemfilled {
   border: 1px solid #1E1E1E;
   background-color: #1E1E1E;
   border-radius: 100%;
   height: 40px;
   width: 40px;
 }
-.genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-itemfilled a {
+.genre .genrebooksone-pagination ul .genre-list ul .genre-previous a .genrepagination-itemfilled a {
   text-decoration: none;
   list-style: none;
   color: white;
@@ -1034,6 +1064,11 @@
 @media (max-width: 768px) {
   .contact .contactus-titleheading {
     font-size: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .contact .contactus-titleheading {
+    font-size: 30px;
   }
 }
 .contact .contactus-downpart {
