@@ -29,8 +29,8 @@
  }
 
  .book-title h1 {
-     color: rgb(26, 25, 25);
-     font-size: 64px;
+     color: rgb(237, 16, 16);
+     font-size: 200px;
      margin-top: 75px;
      margin-bottom: 30px;
      margin-left: 25px;
@@ -62,8 +62,8 @@
  }
 
  .book-img {
-     width: 400px;
-     height: 495px;
+     width: 800px;
+     height: auto;
      margin-top: -400px;
  }
 
@@ -176,9 +176,6 @@
 
  }
 
- .previous-comment-box {
-     
- }
 
  .previous-comment-box {
      margin-bottom: 40px;
