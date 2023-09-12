@@ -1,0 +1,109 @@
+.profile {
+  background-color: #F2F4F5;
+}
+.profile .profilenavigation {
+  padding: 44px 0 84px 0;
+  background-color: #FFF;
+  box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.profile .profilenavigation .profilepic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile .profilenavigation .profilepic .pp {
+  border-radius: 120px;
+  width: 187px;
+}
+.profile .profilenavigation .profilepic h2 {
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-top: 15px;
+}
+@media screen and (min-width: 768) {
+  .profile .profilenavigation .navbar-collapse {
+    display: none;
+  }
+}
+.profile .profilenavigation .profilenav {
+  padding-top: 58px;
+}
+@media (min-width: 768px) {
+  .profile .profilenavigation .profilenav {
+    display: block !important;
+  }
+}
+.profile .profilenavigation .profilenav .collapse:not(.show) {
+  display: none;
+}
+.profile .profilenavigation .profilenav h3 {
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.profile .profilenavigation .profilenav h3 a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.profile .profileinfo {
+  margin: 44px 0 0 0;
+}
+.profile .profileinfo h1 {
+  display: block;
+  padding: 0;
+  height: 56px;
+}
+.profile .profileinfo .profileform {
+  margin: 47px 0;
+}
+.profile .profileinfo .profileform .label {
+  color: #9F9E9E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profile .profileinfo .profileform .place {
+  margin-bottom: 45px;
+  width: 100%;
+  max-height: 36px;
+  color: #1E1E1E;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9F9E9E;
+  background-color: #F2F4F5;
+}
+.profile .profileinfo .profileform .place::-moz-placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profileform .place::placeholder {
+  color: #1E1E1E;
+}
+.profile .profileinfo .profilebtn {
+  display: inline-flex;
+  width: 95px;
+  height: 40px;
+  min-width: 95px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #CFCFCF;
+  margin-right: 20px;
+  border: none;
+}/*# sourceMappingURL=test.css.map */

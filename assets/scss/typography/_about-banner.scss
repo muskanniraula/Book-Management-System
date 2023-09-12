@@ -1,0 +1,99 @@
+
+
+.about-banner {
+    text-align: center;
+    h1 {
+        @include text(24px, Rubik, 500, $black);
+    }
+
+    h2 {
+        @include text(16px, Roboto, 500, $black);
+    }
+
+    p {
+        @include text(12px, Roboto, 400, $gray);
+    }
+
+    button {
+        @include text(12px, Roboto, 600, $black);
+        text-align: center;
+    }
+
+    @media (min-width: $s) {
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        button {
+            font-size: 16px;
+        }
+    }
+    @media (min-width: $md) {
+    text-align: left;
+    }
+
+    @media (min-width: $lg) {
+        h1 {
+            font-size: 48px;
+        }
+    }
+}
+
+.missions {
+    h2 {
+        @include text(16px, Rubik, 500, $black);
+    }
+
+    .mission {
+        .mission-heading {
+            @include text(12px, Roboto, 500, $black);
+        }
+
+        .number {
+            @include text(32px, PT Serif, 500, $black);
+            letter-spacing: 5.76px;
+        }
+        p {
+            @include text(14px, Roboto, 400, $gray);
+            text-align: center;
+        }
+    }
+    @media (min-width: $s) {
+        h2 {
+            font-size: 32px;
+        }
+
+        .mission {
+            .mission-heading {
+                font-size: 16px;
+            }
+
+            .number {
+                font-size: 40px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        .mission {
+            .mission-heading {
+                font-size: 18px;
+            }
+
+            .number {
+                font-size: 64px;
+            }
+        }
+    }
+}

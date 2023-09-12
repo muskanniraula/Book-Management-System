@@ -92,10 +92,12 @@ color: #CECECE;
 display: flex;
 justify-content: space-between;
 }
-.field input, input:focus
+input, input:focus
 {
     outline: none;
     border: none;
+    border-bottom: #000 solid 1px;
+    width: 250px;
 }
 .term-policy:hover
 {

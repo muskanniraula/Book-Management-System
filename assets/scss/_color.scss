@@ -1,0 +1,29 @@
+
+$black: #1e1e1e;
+$gray: #3d3d3d;
+$red: #D10011;
+$light-gray:#7F7F7F;
+$mission-gray: #F2F2F2;
+$blue:#33BBFF;
+
+.missions
+{
+    background-color: $mission-gray;
+}
+.about-banner
+{
+    button
+    {
+    background: #F2F2F2;
+    border: 0px;
+    }
+}
+.circle
+{
+&:hover {
+    background-color: $black;
+    path {
+        fill: white;
+    }
+}
+}

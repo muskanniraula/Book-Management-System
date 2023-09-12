@@ -1,0 +1,130 @@
+.container-signin {
+    h2 {
+        @include text(24px, Roboto, 300, $black);
+    }
+    h1 {
+        @include text(30px, Roboto, 600, $black);
+    }
+    form {
+        label {
+            @include text(12px, Roboto, 400, $black);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            @include text(10px, Roboto, 400, $black);
+            width:auto;
+            outline: none;
+            border: none;
+            border-bottom: $light-gray solid 1px;
+
+            &::placeholder {
+                @include text(10px, Roboto, 400, $light-gray);
+            }
+            &:focus {
+                border-bottom: $blue solid 1px;
+            }
+            &.invalid-input {
+                border-bottom: $red solid 1px;
+            }
+            &.signin {
+                width: 100%;
+            }
+            .btn
+            {
+            @include text(8px, Roboto, 600, white);
+                
+               
+            }
+    @media (min-width: $xl) {
+        width: 295px;
+
+}
+@media (min-width:$md) {
+    font-size: 12px;
+    width: 245px;
+}
+    }
+        }
+
+        .invalid {
+            display: none;
+            @include text(8px, Roboto, 400, $red);
+        }
+        .forgot {
+            @include text(10px, Roboto, 400, #888888);
+        }
+
+        .checkbox {
+            @include text(10px, Roboto, 400, $light-gray);
+            a {
+                @include text(10px, Roboto, 400, $light-gray);
+                text-decoration-line: underline;
+                &:hover {
+                    color: #33bbff;
+                }
+            }
+        }
+    }
+    .redirect-signup {
+        @include text(10px, Roboto, 400, $light-gray);
+        text-align: center;
+
+        a {
+            color: #7f7f7f;
+            &:hover {
+                color: #33bbff;
+            }
+        }
+    }
+   
+    @media (min-width: $md) {
+        h2 {
+            font-size: 36px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        form {
+            label {
+                font-size: 18px;
+            }
+          .btn
+          {
+            font-size: 14px;
+          }
+        .invalid {
+            font-size:12px;
+        }
+        .forgot {
+            font-size:14px;
+        }
+        .checkbox {
+            font-size:  14px;
+            a {
+                font-size:14px;
+            }
+            
+        }
+    }
+    .redirect-signup {
+        font-size:14px;
+    
+    }
+    
+
+    
+}
+
+.field-active {
+    border-bottom: 2px solid #33bbff;
+    color: #cecece;
+    display: flex;
+    justify-content: space-between;
+}
+.field-invalid {
+    border-bottom: 2px solid #ff0000;
+    color: #cecece;
+    display: flex;
+    justify-content: space-between;
+}

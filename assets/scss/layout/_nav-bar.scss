@@ -1,0 +1,54 @@
+.nav-bar {
+    padding:15px 0;
+    background-color: white;
+box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.07);
+
+ul
+{
+    width: 224px;
+    position: absolute;
+
+}
+    .navigation {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .circle {
+        overflow: hidden;
+        display: none;
+        border: 2px solid $black;
+        padding: 6px 3px;
+        border-radius: 50px;
+      
+        svg {
+            margin-bottom: -8px;
+        }
+    }
+
+    .hidden
+    {
+        display: block;
+    }
+    @media (min-width: $lg) {
+        ul
+        {
+            width: auto;
+        }
+        .navigation {
+            display: block;
+            
+        }
+        .hidden
+        {
+            display: none;
+        }
+       
+        .circle {
+            display: block;
+        }
+        
+    }
+
+}
