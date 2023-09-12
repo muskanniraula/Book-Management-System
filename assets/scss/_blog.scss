@@ -1,5 +1,6 @@
 .mainblog {
 
+    // HEADER CSS
     h1 {
         color: #1E1E1E;
         display: flex;
@@ -13,7 +14,7 @@
         line-height: 1;
     }
 
-
+    // FIRST IMAGE OF BLOG PAGE
     .blogimg1 {
         height: 347px;
         width: 100%;
@@ -27,10 +28,12 @@
         }
     }
 
+    // BLOG CONTENT CSS
     .blogcont {
         padding-left: 9px;
         width: 100%;
 
+        // SECOND HEADER OF BLOG PAGE
         h2 {
             color: #1E1E1E;
             font-size: 32px;
