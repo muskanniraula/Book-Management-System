@@ -1,0 +1,141 @@
+.allbooks {
+    padding-top: 92px;
+    height: fit-content;
+    background-color: #1E1E1E;
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 44px 
+        h2 {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .seeall {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 9px;
+
+            a {
+                font-size: 18px;
+                color: white;
+            }
+
+            .rightarrow {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .midpart {
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: row;
+        gap: 71.25px;
+        justify-content: space-between;
+        margin-top: 24px;
+        margin-bottom: 34px;
+
+        .imagepart {
+            width: 183px;
+            .tag {
+                position: relative;
+                .book-image {
+                    height: 296px;
+                    width: 183px;
+                    
+                }
+                .booked {
+                    margin: 0px;
+                    padding: 8px;
+                    align-items: center;
+                    display: inline-flex;
+                    justify-content: center;
+                    background-color: #C22A34;
+                    font-size: 13px;
+                    color: white;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                }
+                .available {
+                    margin: 0px;
+                    padding: 8px;
+                    align-items: center;
+                    display: inline-flex;
+                    justify-content: center;
+                    background-color: #5CA202;
+                    font-size: 13px;
+                    color: white;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    z-index: 1;
+                }
+            }
+            .imagetext {
+                color: white;
+                margin-top: 10px;
+
+                .bookauthor {
+                    font-size: 13px;
+                }
+
+                .bookname {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.genreandthemes {
+    margin-top: 35px;
+    margin-bottom: 90px;
+
+    .genreheading {
+        color: #1E1E1E;
+        display: flex;
+        justify-content: center;
+    }
+    .genrecollection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 26px;
+        padding-top: 55px;
+        .genrecolumn {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            align-items: center;
+            // width: calc(100%/5 - 21px);
+            .genrecover {
+                border: 1px dashed rgba(30, 30, 30, 0.40);
+                border-radius: 119px;
+                width: 100%;
+                height: 348px;
+                padding: 10px;
+
+                .genrecoverpicture {
+                    height: 100%;
+                    border-radius: 108px;
+                    width: 100%;
+                }
+            }
+            .genretitle {
+                font-size: 18px;
+                color: #1E1E1E;
+                .noofbooks {
+                    text-align: center;
+                    font-size: 14px;
+                    color: rgba(30, 30, 30, 0.40);
+                }
+            }
+        }
+    }
+}

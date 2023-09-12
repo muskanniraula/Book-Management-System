@@ -1,0 +1,176 @@
+.booksone {
+  background-color: #1E1E1E;
+}
+.booksone .allbooks-topheading {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 58px;
+}
+.booksone .searchsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 29px;
+  margin-bottom: 44px;
+}
+.booksone .searchsection .allbooks-searchbg {
+  height: 42px;
+  background-color: #DFDFDF;
+  border-radius: 5px;
+  width: 95%;
+  border: none;
+  padding-left: 7px;
+  border: none;
+  outline-style: none;
+}
+.booksone .searchsection .allbooks-searchbg .allbooks-searchicon {
+  width: 24px;
+  padding-bottom: 3px;
+}
+.booksone .searchsection .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.booksone .searchsection .right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.booksone .searchsection .right .sortby {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+.booksone .searchsection .right .dropdown {
+  height: 42px;
+  background-color: #DFDFDF;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+}
+.booksone .searchsection .right .dropdown .dropdown-menulist {
+  font-size: 14px;
+  color: #1E1E1E;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.booksone .searchsection .right .dropdown .arrow-down {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.booksone .allbooks-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 71.25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .booksone .allbooks-collection {
+    gap: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .booksone .allbooks-collection {
+    gap: 60px;
+  }
+}
+.booksone .allbooks-collection .imagepart {
+  width: 183px;
+}
+.booksone .allbooks-collection .imagepart .tag {
+  position: relative;
+}
+.booksone .allbooks-collection .imagepart .tag .book-image {
+  height: 296px;
+  width: 183px;
+}
+.booksone .allbooks-collection .imagepart .tag .available {
+  margin: 0px;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5CA202;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.booksone .allbooks-collection .imagepart .tag .booked {
+  margin: 0px;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C22A34;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.booksone .allbooks-collection .imagepart .imagetext {
+  color: white;
+  margin-top: 10px;
+}
+.booksone .allbooks-collection .imagepart .imagetext .bookname {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.booksone .allbooks-collection .imagepart .imagetext .bookauthor {
+  font-size: 13px;
+}
+.booksone .allbooksone-pagination .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.booksone .allbooksone-pagination ul {
+  list-style: none;
+}
+.booksone .allbooksone-pagination ul li {
+  text-decoration: none;
+}

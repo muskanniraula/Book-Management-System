@@ -1,0 +1,68 @@
+.privacypolicy {
+   background-image: url('../images/openbook.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+
+   .overlay {
+      background-color: #1E1E1E;
+      width: 100%;
+      opacity: 87%;
+
+      .privacytop {
+         padding: 110px 350px;
+         @media (max-width:575.9px) {
+            padding: 40px 40px;
+         }
+         @media (min-width:576px) {
+            padding: 40px 40px;
+         }
+         @media (min-width:768px) {
+            padding: 60px 80px;
+         }
+         @media (min-width:992px) {
+            padding: 80px 180px;
+         }
+         @media (min-width:1200px) {
+            padding: 100px 270px;
+         }
+         @media (min-width:1400px) {
+            padding: 110px 350px;
+         }
+         .privacy-heading {
+            color: white;
+            text-align: center;
+            padding-bottom: 20px;
+         }
+
+         .privacy-paragraph {
+            color: white;
+            text-align: center;
+         }
+
+      }
+   }
+
+}
+
+.privacytext {
+   display: flex;
+   flex-direction: column;
+
+   .privacy-infoheading {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1E1E1E;
+   }
+
+   .privacy-info {
+      font-size: 16px;
+      color: #1E1E1E;
+   }
+
+
+}
