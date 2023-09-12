@@ -8,10 +8,15 @@
     form {
         label {
             @include text(12px, Roboto, 400, $black);
+            @media (min-width:$lg) {
+                font-size: 18px;
+                
+            }
         }
         input[type="text"],
         input[type="email"],
         input[type="password"] {
+            padding:10px 0;
             @include text(10px, Roboto, 400, $black);
             width:auto;
             outline: none;
@@ -20,6 +25,11 @@
 
             &::placeholder {
                 @include text(10px, Roboto, 400, $light-gray);
+                @media (min-width:$lg) {
+                    font-size: 14px;
+
+                    
+                }
             }
             &:focus {
                 border-bottom: $blue solid 1px;
@@ -39,6 +49,7 @@
     @media (min-width: $xl) {
         width: 295px;
 
+     
 }
 @media (min-width:$md) {
     font-size: 12px;
