@@ -34,6 +34,196 @@ td {
   line-height: normal;
 }
 
+.index .allbooks-topheading {
+  color: #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin: 55px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index .allbooks-topheading h2 {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.index .allbooks-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 71.25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  overflow-y: hidden;
+}
+@media (min-width: 992px) {
+  .index .allbooks-collection {
+    gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .index .allbooks-collection {
+    gap: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .index .allbooks-collection {
+    gap: 71.25px;
+  }
+}
+@media (max-width: 462px) {
+  .index .allbooks-collection {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+  }
+}
+.index .allbooks-collection .imagepart {
+  width: 183px;
+}
+.index .allbooks-collection .imagepart .tag {
+  position: relative;
+}
+.index .allbooks-collection .imagepart .tag .book-image {
+  height: 296px;
+  width: 183px;
+}
+.index .allbooks-collection .imagepart .tag .available {
+  margin: 0px;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5CA202;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.index .allbooks-collection .imagepart .tag .booked {
+  margin: 0px;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C22A34;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.index .allbooks-collection .imagepart .imagetext {
+  color: #1E1E1E;
+  margin-top: 10px;
+}
+.index .allbooks-collection .imagepart .imagetext .bookname {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.index .allbooks-collection .imagepart .imagetext .bookauthor {
+  font-size: 13px;
+}
+.index .genreandthemes {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.index .genreandthemes .genreheading {
+  color: #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index .genreandthemes .genreheading h2 {
+  color: #000;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.index .genreandthemes .genrecollection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 26px;
+  padding-top: 40px;
+  overflow-y: hidden;
+}
+.index .genreandthemes .genrecollection .genrecolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index .genreandthemes .genrecollection .genrecolumn .genrecover {
+  border: 1px dashed rgba(30, 30, 30, 0.4);
+  border-radius: 119px;
+  height: 348px;
+  padding: 10px;
+}
+.index .genreandthemes .genrecollection .genrecolumn .genrecover .genrecoverpicture {
+  width: 215.963px;
+  height: 326.148px;
+  border-radius: 108px;
+}
+.index .genreandthemes .genrecollection .genrecolumn .genretitle {
+  font-size: 18px;
+  color: #1E1E1E;
+}
+.index .genreandthemes .genrecollection .genrecolumn .genretitle .noofbooks {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(30, 30, 30, 0.4);
+}
+
 .herobanner {
   width: 100%;
   height: 100%;
