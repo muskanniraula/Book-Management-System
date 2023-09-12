@@ -1,0 +1,49 @@
+.faq-banner
+{
+.form-control:focus
+{
+border:none;
+}
+}
+.accordion {
+    .accordion-item {
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        .accordion-button {
+            color: $black;
+            border: none;
+            box-shadow: none;
+            padding-left: 0px;
+
+            &:not(.collapsed) {
+                box-shadow: none;
+                background-color: #fff;
+                padding-left: 0px;
+            }
+
+            &:focus,
+            :not(:focus) {
+                color: $black;
+            }
+
+            &::after {
+                background-image: url("../images/plus.svg");
+                box-shadow: none;
+                border: none;
+            }
+
+            &:not(.collapsed)
+            {
+                &::after
+                {
+                    background-image: url("../images/minus.png");
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    
+}

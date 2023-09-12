@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+font-family: Roboto;
+}
+.accordion-item{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.faq-banner
+{
+    margin: 43px 0 79px;
+}
+
+h3
+{
+    color: #D10011;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.accordion-button:not(.collapsed) {
+box-shadow: none;
+}
+h1
+{
+    color: #1E1E1E;
+font-family: Rubik;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+h4
+{
+    color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.faq-about-section
+{
+    padding:104px 0px;
+}
+.faq-about-p
+{
+    color: #4E4E4E;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.banner-p{
+    color: #7F7F7F;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* accordian section */
+
+.accordion-button:focus
+{
+    color: #1E1E1E;
+
+}
+.accordion-button:not(:focus)
+{
+    color: #1E1E1E;
+
+}
+.accordion-button
+{
+    color: #1E1E1E;
+}
+.accordion-header {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex: 1 0 0;
+    padding-left: 0px;
+}
+.accordion-body{
+    align-self: stretch;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160% ;     
+    border: none;
+    box-shadow: none;
+    color: #7F7F7F;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 0px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #FFF;
+    padding-left: 0px;
+}
+.accordion-button
+{
+    border: none;
+    box-shadow: none;
+    padding-left: 0px;
+}
+.accordion-header
+{
+    border: none;
+    color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.accordion-item
+{
+    border: none;
+}
+
+.accordion-button::after {
+    background-image: url("../images/plus.svg");
+
+    box-shadow: none;
+border: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image:url("../images/minus.png") ;
+    border: none;
+
+    box-shadow: none;
+}
+
+
+/* blog section */
+
+.blogs h1{
+    color: #1E1E1E;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px; 
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;    
+    padding: 44px 0 70px 0;
+    margin-bottom: 0;
+    line-height:1 ;
+}
+.blogs h2{
+    color: #1E1E1E;
+    font-size: 32px;
+    font-weight: 500;   
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.blogimg1{
+    height: 347px;
+    width: 100%;
+}
+
+.blog1pag{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 138.889%;
+    font-style: normal;
+    margin: 25px 0;
+
+}
+
+.bigbtn{
+    width: 168px;
+    border: 0;
+    border-radius: 5px;
+    background: #1E1E1E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 12px 0;
+}
+.blogsancor{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;    
+}
+
+.blogcont{
+    padding-left:9px ;
+    width: 590px;
+}
+
+.blogs{
+    margin: 70px 0;
+}
+
+.blogsimage2{
+    width: 100%;
+}
+
+.blogs h3{
+    color: #1E1E1E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 15px 0 8px 0;
+}
+
+.eachblog{
+    margin: 0 0 70px 0;
+}
+
+.pubdate{
+    color: #7F7F7F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blogconte{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;   
+    padding-right: 20px; 
+}
+.about-banner-image
+{
+    margin-bottom:-40px;
+} 
+
+.secbtn{
+    background: #1E1E1E;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+}
+
+
+/* FOOTER CSS*/
+.logos{
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 149px;
+    height: 26px;
+}
+
+footer{
+    background-color: #1E1E1E;
+    width: 100%;
+    padding: 40px 0  0 0;
+}
+
+.lists{
+    display: flex;
+    gap: 100px;
+}
+
+.listtitle{
+    font-size: 18px;
+    color: #ffff;
+    list-style: none;
+    margin-bottom: 25px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.listitem{
+    color: #ffff;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.footlogo{
+    height: 35px;
+    width: 35px;
+}
+
+.socials{
+    gap: 20px;
+    display: flex;
+}
+
+.footlink{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.copyright{
+    display:flex ;
+    width: 100%;
+    background-color: #ffff;
+    color:#1E1E1E ;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+.mission h4
+{
+    margin: 15px 0;
+}
+.our_mission
+{
+    background-color: #F2F2F2;
+} 
+.mission p
+{
+    color: #3D3D3D;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.number
+{
+    color: #000;
+font-family: PT Serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 5.76px;
+}
+@media screen and (max-width:992px) {
+    .about-banner
+    {
+           justify-content: center;
+        text-align: center;
+    }
+
+    .banner-p
+    {
+        font-size: 12px;
+    }
+    .faq-banner
+    {
+    
+        justify-content: center;
+        text-align: center;
+    }
+    .faq-banner-content
+    {
+        margin-top: 20px;
+    }
+    
+h3
+{
+font-size: 10px;
+}
+h1
+{
+font-size: 32px;
+}
+h4
+{
+font-size: 10px;
+}
+.faq-about-heading
+{
+    font-size: 16px;
+}
+.mission-heading
+{
+    font-size: 16px;
+
+}
+.mission p 
+{
+    font-size: 12px;
+}
+.faq-about-p
+{
+    font-size: 12px;
+}
+.btn{
+    font-size: 8px;
+}
+/* no use */
+
+.accordion-header {
+    font-size: 16px;
+}
+.accordion-body{
+    font-size: 12px;
+}
+
+}
