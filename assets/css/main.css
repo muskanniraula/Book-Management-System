@@ -15,7 +15,10 @@ html {
 a {
   text-decoration: none;
 }
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
 }
 
@@ -24,11 +27,11 @@ ul li {
 }
 
 .missions {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .about-banner button {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: 0px;
 }
 
@@ -290,7 +293,7 @@ ul li {
   margin-top: 10px;
 }
 .faq-banner h3 {
-  color: #D10011;
+  color: #d10011;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 500;
@@ -302,7 +305,7 @@ ul li {
   font-weight: 500;
 }
 .faq-banner p {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Rubik;
   font-size: 10px;
   font-weight: 400;
@@ -367,7 +370,7 @@ ul li {
   font-weight: 700;
 }
 .accordion .accordion-item .accordion-body {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
@@ -392,7 +395,7 @@ ul li {
   font-weight: 500;
 }
 .faq-about-section .faq-about-p {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 8px;
   font-weight: 400;
@@ -437,9 +440,9 @@ ul li {
     font-size: 18px;
   }
 }
-.container-signin form input[type=text],
-.container-signin form input[type=email],
-.container-signin form input[type=password] {
+.container-signin form input[type="text"],
+.container-signin form input[type="email"],
+.container-signin form input[type="password"] {
   padding: 10px 0;
   color: #1e1e1e;
   font-family: Roboto;
@@ -448,73 +451,77 @@ ul li {
   width: auto;
   outline: none;
   border: none;
-  border-bottom: #7F7F7F solid 1px;
+  border-bottom: #7f7f7f solid 1px;
 }
-.container-signin form input[type=text]::-moz-placeholder, .container-signin form input[type=email]::-moz-placeholder, .container-signin form input[type=password]::-moz-placeholder {
-  color: #7F7F7F;
+.container-signin form input[type="text"]::-moz-placeholder,
+.container-signin form input[type="email"]::-moz-placeholder,
+.container-signin form input[type="password"]::-moz-placeholder {
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
 }
-.container-signin form input[type=text]::placeholder,
-.container-signin form input[type=email]::placeholder,
-.container-signin form input[type=password]::placeholder {
-  color: #7F7F7F;
+.container-signin form input[type="text"]::placeholder,
+.container-signin form input[type="email"]::placeholder,
+.container-signin form input[type="password"]::placeholder {
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
 }
 @media (min-width: 992px) {
-  .container-signin form input[type=text]::-moz-placeholder, .container-signin form input[type=email]::-moz-placeholder, .container-signin form input[type=password]::-moz-placeholder {
+  .container-signin form input[type="text"]::-moz-placeholder,
+  .container-signin form input[type="email"]::-moz-placeholder,
+  .container-signin form input[type="password"]::-moz-placeholder {
     font-size: 14px;
   }
-  .container-signin form input[type=text]::placeholder,
-  .container-signin form input[type=email]::placeholder,
-  .container-signin form input[type=password]::placeholder {
+  .container-signin form input[type="text"]::placeholder,
+  .container-signin form input[type="email"]::placeholder,
+  .container-signin form input[type="password"]::placeholder {
     font-size: 14px;
   }
 }
-.container-signin form input[type=text]:focus,
-.container-signin form input[type=email]:focus,
-.container-signin form input[type=password]:focus {
-  border-bottom: #33BBFF solid 1px;
+.container-signin form input[type="text"]:focus,
+.container-signin form input[type="email"]:focus,
+.container-signin form input[type="password"]:focus {
+  border-bottom: #33bbff solid 1px;
 }
-.container-signin form input[type=text].invalid-input,
-.container-signin form input[type=email].invalid-input,
-.container-signin form input[type=password].invalid-input {
-  border-bottom: #D10011 solid 1px;
+.container-signin form input[type="text"].invalid-input,
+.container-signin form input[type="email"].invalid-input,
+.container-signin form input[type="password"].invalid-input {
+  border-bottom: #d10011 solid 1px;
 }
-.container-signin form input[type=text].signin,
-.container-signin form input[type=email].signin,
-.container-signin form input[type=password].signin {
+.container-signin form input[type="text"].signin,
+.container-signin form input[type="email"].signin,
+.container-signin form input[type="password"].signin {
   width: 100%;
 }
-.container-signin form input[type=text] .btn,
-.container-signin form input[type=email] .btn,
-.container-signin form input[type=password] .btn {
+.container-signin form input[type="text"] .btn,
+.container-signin form input[type="email"] .btn,
+.container-signin form input[type="password"] .btn {
   color: white;
   font-family: Roboto;
   font-size: 8px;
   font-weight: 600;
 }
 @media (min-width: 1200px) {
-  .container-signin form input[type=text],
-  .container-signin form input[type=email],
-  .container-signin form input[type=password] {
+  .container-signin form input[type="text"],
+  .container-signin form input[type="email"],
+  .container-signin form input[type="password"] {
     width: 295px;
   }
 }
 @media (min-width: 768px) {
-  .container-signin form input[type=text],
-  .container-signin form input[type=email],
-  .container-signin form input[type=password] {
+  .container-signin form input[type="text"],
+  .container-signin form input[type="email"],
+  .container-signin form input[type="password"] {
     font-size: 12px;
     width: 245px;
   }
 }
 .container-signin .invalid {
   display: none;
-  color: #D10011;
+  color: #d10011;
   font-family: Roboto;
   font-size: 8px;
   font-weight: 400;
@@ -526,13 +533,13 @@ ul li {
   font-weight: 400;
 }
 .container-signin .checkbox {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
 }
 .container-signin .checkbox a {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
@@ -543,7 +550,7 @@ ul li {
 }
 
 .redirect-signup {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: Roboto;
   font-size: 10px;
   font-weight: 400;
@@ -599,13 +606,17 @@ ul li {
   justify-content: space-between;
 }
 
-.navigation-button, .navigation-button-disabled, .navigation-button-enabled {
+.navigation-button,
+.navigation-button-disabled,
+.navigation-button-enabled {
   display: inline-flex;
   align-items: center;
   border-radius: 24px;
   padding: 8px 12px 5px;
 }
-.navigation-button h3, .navigation-button-disabled h3, .navigation-button-enabled h3 {
+.navigation-button h3,
+.navigation-button-disabled h3,
+.navigation-button-enabled h3 {
   color: #1e1e1e;
   font-family: Roboto;
   font-size: 12px;
@@ -613,7 +624,9 @@ ul li {
   margin: 0px;
 }
 @media (min-width: 1200px) {
-  .navigation-button h3, .navigation-button-disabled h3, .navigation-button-enabled h3 {
+  .navigation-button h3,
+  .navigation-button-disabled h3,
+  .navigation-button-enabled h3 {
     font-size: 18px;
   }
 }
@@ -692,4 +705,4 @@ ul li {
   .search input:focus {
     width: 120px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

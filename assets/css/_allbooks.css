@@ -1,5 +1,5 @@
 .booksone {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 .booksone .allbooks-topheading {
   color: white;
@@ -7,8 +7,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 58px;
 }
 .booksone .searchsection {
@@ -20,7 +20,7 @@
 }
 .booksone .searchsection .allbooks-searchbg {
   height: 42px;
-  background-color: #DFDFDF;
+  background-color: #dfdfdf;
   border-radius: 5px;
   width: 95%;
   border: none;
@@ -38,16 +38,16 @@
   display: flex;
   gap: 30px;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .booksone .searchsection .right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-size: 14px;
 }
@@ -58,22 +58,22 @@
 }
 .booksone .searchsection .right .dropdown {
   height: 42px;
-  background-color: #DFDFDF;
+  background-color: #dfdfdf;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 180px;
 }
 .booksone .searchsection .right .dropdown .dropdown-menulist {
   font-size: 14px;
-  color: #1E1E1E;
+  color: #1e1e1e;
   padding-left: 10px;
   text-decoration: none;
 }
@@ -87,11 +87,11 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 71.25px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 @media (min-width: 1200px) {
@@ -118,15 +118,15 @@
   margin: 0px;
   padding: 8px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #5CA202;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #5ca202;
   font-size: 13px;
   color: white;
   position: absolute;
@@ -137,15 +137,15 @@
   margin: 0px;
   padding: 8px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #C22A34;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #c22a34;
   font-size: 13px;
   color: white;
   position: absolute;
