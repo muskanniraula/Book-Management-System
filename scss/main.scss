@@ -1,0 +1,1309 @@
+ //   variables above 
+ $heading-color-1: #1E1E1E;
+ $font-family-1: Roboto;
+
+
+
+ //media queries
+
+ $mobile: 576px;
+ $tablet: 768px; // Adjusted for typical tablet screens
+ $laptop: 992px; // Adjusted for typical laptop screens
+ $desktop: 1200px; // Adjusted for typical desktop screens
+
+
+ // sass starts from here
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+//  -------------------------modal box ----------------------------------------------
+
+//   .modal-box{
+//     top:50%;
+//     left:50%;
+
+//     .modal-box-btn{
+//         margin-top: 20px;
+//         margin-left: 500px;
+//         padding: 8px;
+//         border: 2px solid rgb(240, 233, 233);
+//         border-radius: 18px;
+//         color: #000;
+
+//     }
+//     .popup{
+//         width:400px;
+//         background: #fff;
+//         border-radius: 6px;
+//         position: absolute;
+//         top:50%;
+//         left:50%;
+//         transform: translate(-50%,-50%);
+//         text-align: center;
+       
+//     }
+//     .fa-close{
+//       margin-left:350px;
+//       margin-top: 1px;
+//       cursor: pointer;
+        
+//     }
+//     .tick-404{
+//         width: 50px;
+//         height:auto;
+//         margin-top: 0px;
+//     }
+//     .button-go-to-profile{
+//         width: 100px;
+//         height: 35px;
+//         color: white;
+//         margin-top: 50px;
+//         padding: 7px 10px 10px 10px ;
+//         align-items: center;
+//         border-radius: 31px;
+//         background: #888080;
+//         font-size: 12px;
+//         border-radius: 8px;
+//         margin-top: -25px;
+//         margin-bottom: 25px;
+//         cursor: pointer;
+//     }
+
+
+//   }
+
+//   ----------------------date selection model box ------------------------------------------------------------------------------
+
+.modal-box{
+    top:50%;
+    left:50%;
+
+    .modal-box-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 500px;
+        padding: 8px;
+        border: 2px solid rgb(240, 233, 233);
+        
+        color: #000;
+
+    }
+
+    .popup{
+        width:500px;
+        height: 290px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+       
+    }
+    .fa-close{
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        
+    }
+    .popup-book-title-1{
+         margin-top: 30px;
+    }
+    .popup-book-title{
+        
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .button-go-to-profile{
+        width: 100px;
+        height: 35px;
+        color: white;
+        margin-top: 50px;
+        padding: 7px 10px 10px 10px ;
+        align-items: center;
+        border-radius: 31px;
+        background: #888080;
+        font-size: 12px;
+        border-radius: 8px;
+        margin-top: -25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+
+
+.date-selection {
+    display: flex; 
+    flex-direction: row; 
+    margin: 10px;
+}
+
+
+.date-selection-rendering {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 20px;
+    margin-right: 100px;
+    
+}
+
+/* CSS for rendering-date */
+.rendering-date {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+/* CSS for the rendering date input */
+#date-selection-rendering-date-id {
+    border: 1px solid #000; /* Correct the border property */
+    padding:3px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* CSS for date-selection-due */
+.date-selection-due {
+    display: flex; /* Use flex to align the due date elements vertically */
+    flex-direction: column; /* Set the direction to column for vertical alignment */
+    // margin-right: 0px;
+}
+
+#date-selection-due-date-id{
+    border: 1px solid #000; /* Correct the border property */
+    padding:3px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+/* CSS for due-date */
+.due-date {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+    .popup-book-button{
+   
+       padding:5px 15px;
+       background-color: #000;
+       color: #fff;
+       border-radius: 5px;
+    }
+
+    .popup-cancel-button{
+        margin-top: 20px;
+       padding:5px;
+       background-color: #000;
+       color: #fff;
+       border-radius: 5px;
+    }
+
+
+  }
+
+
+ // -------------------------------------------------------------------------------------adding media queries 
+
+ //   mobile version screen 
+ @media (min-width: $mobile) {
+
+     // book title section 
+     .book-title {
+         margin-top: 20px;
+         background-color: #948b8b3a;
+         margin-top: 75px;
+         line-height: normal;
+         font-style: normal;
+         text-align: center;
+
+         font-family: $font-family-1;
+
+         h1 {
+             color: #1E1E1E;
+             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+             font-size: 30px;
+             font-weight: 500;
+             margin-top: 10px;
+         }
+
+         h3 {
+             color: #000;
+             font-size: 25px;
+             font-weight: 400;
+         }
+
+         p {
+             color: #000;
+             text-align: justify;
+             font-size: 16px;
+             font-weight: 400;
+         }
+     }
+
+
+     //   main section 
+
+     .main-section {
+         padding-left: 40px;
+         padding-right: 40px;
+         background-color: #f5f5f5;
+
+         .wrapper {
+             background-color: #fff;
+             // padding: 53px 120px 120px ;
+
+             .book-img {
+                 padding-top: 20px;
+                 margin-left: 40px;
+                 display: flex;
+                 justify-content: center;
+                 /* Center horizontally */
+                 align-items: center;
+                 /* Center vertically */
+                 height: 90vh;
+                 margin-bottom: 20px;
+
+             }
+
+             .book-img-book-save {
+                 box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+             }
+
+             .bookmark-save-share {
+                 display: flex;
+                 border-bottom: 1px solid #94909070;
+                 justify-content: center;
+                 align-items: center;
+
+                 .book-now-button {
+                     width: 100px;
+                     height: 35px;
+                     color: white;
+                     margin-top: 50px;
+                     padding: 5px 10px;
+                     align-items: center;
+                     border-radius: 31px;
+                     background: #1E1E1E;
+                     font-size: 12px;
+                     margin-top: -15px;
+                     // margin-left: px;
+                     margin-right: 100px;
+                     margin-bottom: 20px;
+
+                 }
+
+                 i.fa.fa-bookmark-o {
+                     margin-top: 65px;
+                     text-align: right;
+                     font-size: 24px;
+                     margin-top: -15px;
+                     margin-left: 10px;
+                     margin-right: 10px;
+                 }
+
+                 i.fa.fa-share-alt {
+                     margin-top: 65px;
+                     text-align: left;
+                     font-size: 24px;
+                     margin-top: -15px;
+                     margin-right: 20px;
+                 }
+             }
+
+             // -----------------------------------------------------
+
+             .book-description-and-editors {
+
+                 margin-bottom: 30px;
+                 margin-top: 20px;
+                 text-align: center;
+
+                 .h3 {
+                     font-weight: 400;
+                 }
+
+                 p {
+                     font-weight: 400;
+                 }
+             }
+
+
+
+
+             // -----------review section 
+
+             .reviews-section {
+                 margin-top: 20px;
+
+                 h2 {
+                     text-align: center;
+                 }
+
+                 .new-comment {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     margin-left: 10px;
+                     margin-right: 5px;
+                     width: 90%;
+                     margin-bottom: 10px;
+                     margin-right: 5px;
+
+                 }
+
+                 .profile-pic {
+                     width: 70px;
+                     justify-content: center;
+                     align-items: center;
+                     margin-left: 200px;
+                     margin-top: 10px;
+                     margin-bottom: 10px;
+                 }
+
+                 .ratings-send {
+                     display: flex;
+                     justify-content: space-between;
+
+                     .review-send {
+                         /* transform: translate(-50%, -50%); */
+                         -ms-transform: translate(-50%, -50%);
+                         background-color: #f1f1f19d;
+                         color: black;
+                         font-size: 16px;
+                         padding: 8px 25px 8px;
+                         border: none;
+                         cursor: pointer;
+                         border-radius: 6px;
+                         text-align: center;
+                         margin-bottom: 3px;
+
+                     }
+                 }
+             }
+
+
+
+             // previous review section 
+
+             .previous-section {
+
+
+
+                 .previous-comment-box {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     margin-left: 1px;
+                     margin-right: 1px;
+                     width: 95%;
+                     margin: 20px 0px;
+
+
+                     img {
+                         margin-left: 180px;
+                         width: 60px;
+                         height: auto;
+                         padding-top: 10px;
+
+                     }
+
+                     .user-name-comment {
+                         text-align: center;
+
+                         .fa-star {
+                             font-size: 15px;
+                             color: #fbe70b;
+                         }
+                     }
+                 }
+
+
+
+             }
+
+
+             // load more section   
+             .hr-line {
+
+                 .hr-left,
+                 .hr-right {
+                     display: none;
+                 }
+
+                 .load-more-button {
+                     width: 100px;
+                     height: 35px;
+                     color: white;
+                     // margin-top: 50px;
+                     padding: 5px 10px;
+                     align-items: center;
+                     border-radius: 31px;
+                     background: #1E1E1E;
+                     font-size: 12px;
+
+                     margin-left: 170px;
+                     margin-right: 0px;
+                     margin-bottom: 20px;
+                 }
+
+             }
+
+
+
+         }
+     }
+
+
+
+ }
+
+
+ // -------------------------------------------------------------------------------------------------------------------------------------------------------------
+ // tablet screen 
+
+ @media (min-width: $tablet ) {
+
+     // book title section 
+     .book-title {
+         margin-top: 20px;
+         background-color: #948b8b3a;
+         margin-top: 75px;
+         line-height: normal;
+         font-style: normal;
+         text-align: center;
+         margin-left: -200px;
+
+
+         font-family: $font-family-1;
+
+         h1 {
+             color: #1E1E1E;
+             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+             font-size: 50px;
+             font-weight: 500;
+             margin-top: 10px;
+             margin-right: 30px;
+         }
+
+         h3 {
+             color: #000;
+             font-size: 25px;
+             font-weight: 400;
+         }
+
+         p {
+             color: #000;
+             text-align: justify;
+             font-size: 16px;
+             font-weight: 400;
+         }
+     }
+
+
+     //   main section 
+
+     .main-section {
+         padding-left: 40px;
+         padding-right: 40px;
+         background-color: #f5f5f5;
+
+         .wrapper {
+             background-color: #fff;
+             // padding: 53px 120px 120px ;
+
+             .book-img {
+                 padding-top: 20px;
+                 margin-left: 40px;
+                 display: flex;
+                 justify-content: center;
+                 /* Center horizontally */
+                 align-items: center;
+                 /* Center vertically */
+                 height: 60vh;
+
+                 margin-bottom: 20px;
+
+             }
+
+             .book-img-book-save {
+                 box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+             }
+
+             .bookmark-save-share {
+                 display: flex;
+                 flex-direction: column;
+                 border-bottom: 1px solid #94909070;
+                 justify-content: center;
+                 align-items: center;
+
+                 .book-now-button {
+                     width: 200px;
+                     height: 35px;
+                     color: white;
+                     margin-top: 50px;
+                     padding: 5px 10px;
+                     align-items: center;
+                     border-radius: 31px;
+                     background: #1E1E1E;
+                     font-size: 12px;
+                     margin-top: -15px;
+                     margin-left: 40px;
+                     margin-right: 100px;
+                     margin-bottom: 40px;
+
+                 }
+
+                 i.fa.fa-bookmark-o {
+                     margin-top: 65px;
+                     text-align: right;
+                     font-size: 24px;
+                     // margin-top: -15px;
+                     margin-left: 80px;
+                     margin-right: 120px;
+                     margin-bottom: 60px;
+                 }
+
+                 i.fa.fa-share-alt {
+                     margin-top: 65px;
+                     text-align: left;
+                     font-size: 24px;
+                     margin-top: -15px;
+                     margin-left: 80px;
+                     margin-right: 120px;
+                 }
+             }
+
+             // -----------------------------------------------------
+
+             .book-description-and-editors {
+
+                 margin-bottom: 30px;
+                 margin-top: 20px;
+                 text-align: center;
+
+                 .h3 {
+                     font-weight: 400;
+                 }
+
+                 p {
+                     font-weight: 400;
+                 }
+             }
+
+
+
+
+             // -----------review section 
+
+             .reviews-section {
+                 margin-top: 20px;
+
+                 h2 {
+                     text-align: center;
+                 }
+
+                 .new-comment {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     width: 92%;
+                     margin-bottom: 10px;
+                     margin-right: 40px;
+
+
+                 }
+
+                 .profile-pic {
+                     width: 70px;
+                     justify-content: center;
+                     align-items: center;
+                     margin-left: 260px;
+                     margin-top: 10px;
+                     margin-bottom: 10px;
+                 }
+
+                 .ratings-send {
+                     display: flex;
+                     justify-content: space-between;
+
+                     .review-send {
+                         /* transform: translate(-50%, -50%); */
+                         -ms-transform: translate(-50%, -50%);
+                         background-color: #f1f1f19d;
+                         color: black;
+                         font-size: 16px;
+                         padding: 8px 25px 8px;
+                         border: none;
+                         cursor: pointer;
+                         border-radius: 6px;
+                         text-align: center;
+                         margin-bottom: 3px;
+
+                     }
+                 }
+             }
+
+
+
+             // previous review section 
+
+             .previous-section {
+
+
+
+                 .previous-comment-box {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     margin-left: 100px;
+                     margin-right: 1px;
+                     width: 95%;
+                     margin: 20px 0px;
+
+
+                     img {
+                         margin-left: 180px;
+                         width: 60px;
+                         height: auto;
+                         padding-top: 10px;
+
+
+                     }
+
+                     .user-name-comment {
+                         display: flex;
+                         flex-direction: column;
+
+                         .fa-star {
+                             font-size: 15px;
+                             color: #fbe70b;
+
+                         }
+
+                         .user-name {
+                             font-size: 15px;
+                             padding-top: 20px;
+                         }
+
+                         p {
+                             padding-top: 40px;
+                         }
+                     }
+                 }
+
+
+
+             }
+
+
+             // load more section   
+             .hr-line {
+
+                 .hr-left,
+                 .hr-right {
+                     display: none;
+                 }
+
+                 // .load-more-button{
+                 //     width: 100px;
+                 //     height: 35px;
+                 //     color: white;
+                 //     margin-right: -100px;
+                 //     // padding-left: -100px;
+
+                 // }
+
+             }
+
+
+
+         }
+     }
+
+
+
+ }
+
+
+
+ // ---------------------------------------------------------------------------------------------------------------------------------------------
+ // media query for laptop screen
+
+ @media (min-width: 950px) {
+
+     // book title section 
+     .book-title {
+         margin-top: 20px;
+         background-color: #948b8b3a;
+         margin-top: 75px;
+         line-height: normal;
+         font-style: normal;
+         text-align: center;
+         margin-left: -200px;
+
+
+         font-family: $font-family-1;
+
+         h1 {
+             display: block;
+             color: #1E1E1E;
+             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+             font-size: 50px;
+             font-weight: 400;
+             margin-top: 10px;
+             margin-left: 9px;
+             text-align: center;
+         }
+
+         h3 {
+             color: #000;
+             font-size: 25px;
+             font-weight: 400;
+         }
+
+         p {
+             color: #000;
+             text-align: justify;
+             font-size: 16px;
+             font-weight: 400;
+         }
+     }
+
+
+     //   main section 
+
+     .main-section {
+         padding-left: 40px;
+         padding-right: 40px;
+         background-color: #f5f5f5;
+
+         .wrapper {
+             background-color: #fff;
+             // padding: 53px 120px 120px ;
+
+             .book-img {
+                 padding-top: 20px;
+                 margin-left: 40px;
+                 display: flex;
+                 justify-content: center;
+                 /* Center horizontally */
+                 align-items: center;
+                 /* Center vertically */
+                 height: 60vh;
+
+                 margin-bottom: 20px;
+
+             }
+
+             .book-img-book-save {
+                 box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+             }
+
+             .bookmark-save-share {
+                 display: flex;
+                 flex-direction: column;
+                 border-bottom: 1px solid #94909070;
+                 justify-content: center;
+                 align-items: center;
+
+                 .book-now-button {
+                     width: 200px;
+                     height: 35px;
+                     color: white;
+                     margin-top: 50px;
+                     padding: 5px 10px;
+                     align-items: center;
+                     border-radius: 31px;
+                     background: #1E1E1E;
+                     font-size: 12px;
+                     margin-top: -15px;
+                     margin-left: 40px;
+                     margin-right: 100px;
+                     margin-bottom: 40px;
+
+                 }
+
+                 i.fa.fa-bookmark-o {
+                     margin-top: 65px;
+                     text-align: right;
+                     font-size: 24px;
+                     // margin-top: -15px;
+                     margin-left: 80px;
+                     margin-right: 120px;
+                     margin-bottom: 60px;
+                 }
+
+                 i.fa.fa-share-alt {
+                     margin-top: 65px;
+                     text-align: left;
+                     font-size: 24px;
+                     margin-top: -15px;
+                     margin-left: 80px;
+                     margin-right: 120px;
+                 }
+             }
+
+             // -----------------------------------------------------
+
+             .book-description-and-editors {
+
+                 margin-bottom: 30px;
+                 margin-top: 20px;
+                 text-align: center;
+
+                 .h3 {
+                     font-weight: 400;
+                 }
+
+                 p {
+                     font-weight: 400;
+                 }
+             }
+
+
+
+
+             // -----------review section 
+
+             .reviews-section {
+                 margin-top: 20px;
+
+                 h2 {
+                     text-align: center;
+                 }
+
+                 .new-comment {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     width: 92%;
+                     margin-bottom: 10px;
+                     margin-right: 40px;
+
+
+                 }
+
+                 .profile-pic {
+                     width: 70px;
+                     justify-content: center;
+                     align-items: center;
+                     margin-left: 260px;
+                     margin-top: 10px;
+                     margin-bottom: 10px;
+                 }
+
+                 .ratings-send {
+                     display: flex;
+                     justify-content: space-between;
+
+                     .review-send {
+                         /* transform: translate(-50%, -50%); */
+                         -ms-transform: translate(-50%, -50%);
+                         background-color: #f1f1f19d;
+                         color: black;
+                         font-size: 16px;
+                         padding: 8px 25px 8px;
+                         border: none;
+                         cursor: pointer;
+                         border-radius: 6px;
+                         text-align: center;
+                         margin-bottom: 3px;
+
+                     }
+                 }
+             }
+
+
+
+             // previous review section 
+
+             .previous-section {
+
+
+
+                 .previous-comment-box {
+
+                     border: 1px solid #7e7a7ab2;
+                     border-radius: 8px;
+                     margin-left: 100px;
+                     margin-right: 1px;
+                     width: 95%;
+                     margin: 20px 0px;
+
+
+                     img {
+                         margin-left: 180px;
+                         width: 60px;
+                         height: auto;
+                         padding-top: 10px;
+
+
+                     }
+
+                     .user-name-comment {
+                         display: flex;
+                         flex-direction: column;
+
+                         .fa-star {
+                             font-size: 15px;
+                             color: #fbe70b;
+
+                         }
+
+                         .user-name {
+                             font-size: 15px;
+                             padding-top: 20px;
+                         }
+
+                         p {
+                             padding-top: 40px;
+                         }
+                     }
+                 }
+
+
+
+             }
+
+
+             // load more section   
+             .hr-line {
+
+                 .hr-left,
+                 .hr-right {
+                     display: none;
+                 }
+
+                 .load-more-button {
+                     width: 100px;
+                     height: 35px;
+                     color: white;
+                     margin-right: 60px;
+                     padding-left: -100px;
+                 }
+
+             }
+
+
+
+         }
+     }
+
+
+
+ }
+
+ // -------------------------------------------------------------------------------------------------------------------
+
+ // desktop screen 
+
+ @media (min-width: 1200px) {
+
+    // book title section 
+    .book-title {
+        margin-top: 20px;
+        background-color: #948b8b3a;
+        margin-top: 75px;
+        line-height: normal;
+        font-style: normal;
+        text-align: center;
+        margin-left: -200px;
+
+
+        font-family: $font-family-1;
+
+        h1 {
+            // display: block;
+            color: #1E1E1E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 64px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-left: 9px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #000;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        p {
+            color: #000;
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 80px;
+        }
+    }
+
+
+    //   main section 
+
+    .main-section {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #f5f5f5;
+
+        .wrapper {
+            background-color: #fff;
+            // padding: 53px 120px 120px ;
+
+            .book-img {
+                padding-top: 20px;
+                margin-left: 40px;
+                margin-top: -280px;
+                display: flex;
+                justify-content: center;
+                /* Center horizontally */
+                align-items: center;
+                /* Center vertically */
+                height: 80vh;
+
+                margin-bottom: 20px;
+
+            }
+
+            .book-img-book-save {
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            }
+
+            .bookmark-save-share {
+                display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid #94909070;
+                justify-content: center;
+                align-items: center;
+
+                .book-now-button {
+                    width: 100px;
+                    height: 35px;
+                    color: white;
+                    margin-top: 50px;
+                    padding: 5px 10px;
+                    align-items: center;
+                    border-radius: 31px;
+                    background: #1E1E1E;
+                    font-size: 12px;
+                    margin-top: -50px;
+                    margin-left: 0px;
+                    margin-right: 100px;
+                    // margin-bottom: 40px;
+
+                }
+
+                i.fa.fa-bookmark-o {
+                    margin-top: 55px;
+                    text-align: right;
+                    font-size: 24px;
+                    
+                    margin-left: 10px;
+                    margin-right: 120px;
+                    
+                    
+                }
+
+                i.fa.fa-share-alt {
+                    margin-top: 65px;
+                    text-align: left;
+                    font-size: 24px;
+                    margin-left: 0px;
+                    margin-right: 120px;
+                    margin-top: -11px;
+                }
+            }
+
+            // -----------------------------------------------------
+
+            .book-description-and-editors {
+
+                margin-bottom: 30px;
+                margin-top: 20px;
+                text-align: left;
+                margin-left: 35px;
+
+                .h3 {
+                    font-weight: 400;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+            }
+
+
+
+
+            // -----------review section 
+
+            .reviews-section {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+
+                h2 {
+                    text-align: left;
+                    margin-left: 35px;
+                    margin-bottom: 20px;
+                }
+
+                
+
+                .profile-pic {
+                    width: 70px;
+                    margin-left: 40px;
+                    
+                }
+
+                .new-comment {
+
+                    border: 1px solid #7e7a7ab2;
+                    border-radius: 8px;
+                    width: 80%;
+                    margin-bottom: 20px;
+                    margin-right: 40px;
+                    margin-left: 50px;
+
+                }
+
+                .ratings-send {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .review-send {
+                        /* transform: translate(-50%, -50%); */
+                        -ms-transform: translate(-50%, -50%);
+                        background-color: #f1f1f19d;
+                        color: black;
+                        font-size: 16px;
+                        padding: 8px 25px 8px;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 6px;
+                        text-align: center;
+                        margin-bottom: 3px;
+
+                    }
+                }
+            }
+
+
+
+            // previous review section 
+
+            .previous-section {
+
+                .previous-comment-box {
+
+                    border: 1px solid #7e7a7ab2;
+                    border-radius: 8px;
+                    margin-left: 35px;
+                    margin-right: 60px;
+                    width: 91%;
+                    
+
+
+                    img {
+                        margin-left: 10px;
+                        width: 60px;
+                        height: auto;
+                        padding-top: 10px;
+
+
+                    }
+
+                    .user-name-comment {
+                        display: flex;
+                        flex-direction: column;
+                       
+                        
+                        .rating{
+                            display: flex;
+                            .fa-star {
+                                font-size: 15px;
+                                color: #fbe70b;
+                                
+                            }
+                        }
+
+                        .user-name {
+                            font-size: 15px;
+                            padding-top: 20px;
+                            margin-left: -710px;
+                        }
+
+                        p {
+                            
+                            text-align: left;
+                            margin-left: -80px;
+                            margin-bottom: -20px;
+                            
+                        }
+                        .respond-and-sign{
+                            margin-top: -10px;
+                            margin-bottom: 8px;
+
+
+                        }
+
+                    }
+                }
+
+                .hr-line {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .hr-left {
+                        border: 1px solid rgb(19, 19, 19);
+                        display: block;
+                    }
+
+                    .load-more-button-box{
+                        display: flex;
+                        justify-content: left;
+
+                        .load-more-button {
+                            width: 100px;
+                            height: 35px;
+                            color: white;
+                            margin-left: -5px;
+                            
+                        }
+                    }
+                    
+                    .hr-right{
+                        border: 1px solid rgb(19, 19, 19);
+                        display: block;
+                    }
+    
+                }
+    
+
+            }
+
+
+            // load more section   
+
+
+
+        }
+    }
+
+
+
+}
