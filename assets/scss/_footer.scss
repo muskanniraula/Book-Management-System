@@ -1,6 +1,5 @@
 footer {
     background-color: #1E1E1E;
-    height: 100%;
     width: 100%;
     padding: 40px 0 0 0;
 
@@ -26,12 +25,6 @@ footer {
                 width: 35px;
             }
         }
-
-        @media screen and (max-width:425px) {
-            padding-left: 25px;
-        }
-
-
     }
 
     .lists {
@@ -39,7 +32,7 @@ footer {
         justify-content: space-between;
 
         .list {
-
+            padding: 0;
 
             .listtitle {
                 font-size: 18px;
@@ -99,11 +92,16 @@ footer {
     .copyright {
         display: flex;
         width: 100%;
-        background-color: #ffff;
-        color: #1E1E1E;
+        background-color: #1E1E1E;
+        color: #fff;
         font-weight: 500;
         align-items: center;
         justify-content: center;
         padding: 4px 0;
+
+
+        @media screen and (max-width:768px) {
+            margin-top: 20px;
+        }
     }
 }

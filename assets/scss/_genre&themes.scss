@@ -39,6 +39,10 @@
         margin-top: 24px;
         margin-bottom: 34px;
 
+        a{
+            text-decoration: none;
+        }
+
         .imagepart {
             width: 183px;
             .tag {
@@ -95,6 +99,11 @@
 .genreandthemes {
     margin-top: 35px;
     margin-bottom: 90px;
+
+    a{
+        text-decoration: none;
+        color: #1E1E1E;
+    }
 
     .genreheading {
         color: #1E1E1E;

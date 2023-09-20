@@ -15,24 +15,31 @@
 
       .privacytop {
          padding: 110px 350px;
+
          @media (max-width:575.9px) {
             padding: 40px 40px;
          }
+
          @media (min-width:576px) {
             padding: 40px 40px;
          }
+
          @media (min-width:768px) {
             padding: 60px 80px;
          }
+
          @media (min-width:992px) {
             padding: 80px 180px;
          }
+
          @media (min-width:1200px) {
             padding: 100px 270px;
          }
+
          @media (min-width:1400px) {
             padding: 110px 350px;
          }
+
          .privacy-heading {
             color: white;
             text-align: center;

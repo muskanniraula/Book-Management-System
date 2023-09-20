@@ -1,65 +1,84 @@
 .faq-banner {
     text-align: center;
+
+    .form-control {
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #dee2e6;
+        }
+    }
+
     .faq-banner-content {
         margin-top: 10px;
     }
+
     h3 {
         @include text(12px, Roboto, 500, $red);
     }
+
     h1 {
         @include text(24px, Rubik, 500, $black);
     }
+
     p {
-        @include text(10px, Rubik, 400, $light-gray);
+        @include text(12px, Rubik, 400, $light-gray);
     }
-    .btn
-    {
+
+    .btn {
         @include text(10px, Roboto, 400, #fff);
     }
-    
+
     @media (min-width: $md) {
         h3 {
-            font-size: 10px;
+            font-size: 12px;
         }
+
         h1 {
             font-size: 32px;
         }
+
         p {
             font-size: 12px;
         }
-        .btn
-    {
-        font-size: 12px;
-    }
+
+        .btn {
+            font-size: 12px;
+        }
 
     }
+
     @media (min-width: $lg) {
         text-align: left;
+
         .faq-banner-content {
             margin-top: 0px;
         }
+
         h3 {
             font-size: 16px;
         }
+
         h1 {
             font-size: 48px;
         }
+
         p {
             font-size: 14px;
         }
-        .btn
-    {
-        font-size: 10px;
-    }
+
+        .btn {
+            font-size: 10px;
+        }
     }
 }
 
 .questions {
-    .general{
-        @include text(12px, Roboto, 400, $black);
+    .general {
+        @include text(24px, Roboto, 400, $black);
     }
+
     @media (min-width: $lg) {
-        .general{
+        .general {
             font-size: 32px;
         }
     }
@@ -68,46 +87,46 @@
 .accordion {
     .accordion-item {
         .accordion-header {
-            @include text(10px, Roboto, 700, $black);
+            @include text(16px, Roboto, 400, $black);
         }
+
         .accordion-body {
-            @include text(10px, Roboto, 400, $light-gray);
+            @include text(14px, Roboto, 400, $light-gray);
             align-self: stretch;
             border: none;
             box-shadow: none;
             padding: 0px;
         }
+
         @media (min-width: $lg) {
             .accordion-header {
                 font-size: 18px;
             }
+
             .accordion-body {
                 font-size: 16px;
             }
         }
     }
 }
+
 .faq-about-section {
     .faq-about-heading {
-        @include text(10px, Roboto, 500, $black);
+        @include text(14px, Roboto, 500, $black);
     }
+
     .faq-about-p {
-        @include text(8px, Roboto, 400, $light-gray);
+        @include text(12px, Roboto, 400, $light-gray);
     }
-    @media (min-width: $lg) {
-        .faq-about-heading {
-            font-size: 12px;
-        }
-        .faq-about-p {
-            font-size: 10px;
-        }
-    }
-    @media (min-width: $lg) {
+
+    @media (min-width: $md) {
         .faq-about-heading {
             font-size: 16px;
         }
+
         .faq-about-p {
             font-size: 14px;
         }
     }
+
 }

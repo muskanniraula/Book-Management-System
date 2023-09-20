@@ -1,16 +1,123 @@
-.index {
+a {
+    text-decoration: none;
+}
 
-    .allbooks-topheading {
+.allbooks-topheading {
+    color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 55px 0;
+    align-items: center;
+
+    h2 {
+        color: #000;
+        font-family: 'Rubik', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 2.88px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+
+.allbooks-collection {
+    display: flex;
+    gap: 71.25px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+
+    @media (min-width:992px) {
+        gap: 40px;
+    }
+
+    @media (min-width:1200px) {
+        gap: 50px;
+    }
+
+    @media (min-width:1400px) {
+        gap: 71.25px;
+    }
+
+    @media (max-width: 462px) {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+
+    .imagepart {
+        width: 183px;
+
+        .tag {
+            position: relative;
+
+            .book-image {
+                height: 296px;
+                width: 183px;
+            }
+
+            .available {
+                margin: 0px;
+                padding: 8px;
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                background-color: #5CA202;
+                font-size: 13px;
+                color: white;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+
+            .booked {
+                margin: 0px;
+                padding: 8px;
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                background-color: #C22A34;
+                font-size: 13px;
+                color: white;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+
+        }
+
+        .imagetext {
+            color: #1E1E1E;
+            margin-top: 10px;
+
+            .bookname {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            .bookauthor {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.genreandthemes {
+    margin-top: 35px;
+    margin-bottom: 45px;
+
+    .genreheading {
         color: #1E1E1E;
         display: flex;
         justify-content: center;
-        padding: 10px;
-        margin: 55px 0;
-        align-items: center;
 
         h2 {
             color: #000;
-            font-family: 'Rubik', sans-serif;
+            font-family: Rubik;
             font-size: 32px;
             font-style: normal;
             font-weight: 300;
@@ -21,147 +128,43 @@
         }
     }
 
-    .allbooks-collection {
+    .genrecollection {
         display: flex;
-        gap: 71.25px;
         justify-content: space-between;
-        margin-bottom: 50px;
+        justify-content: flex-start;
+        gap: 26px;
+        padding-top: 40px;
         overflow-y: hidden;
+        flex-wrap: nowrap;
 
-        @media (min-width:992px) {
-            gap: 40px;
-        }
-
-        @media (min-width:1200px) {
-            gap: 50px;
-        }
-
-        @media (min-width:1400px) {
-            gap: 71.25px;
-        }
-
-        @media (max-width: 462px) {
-            justify-content: flex-start;
-            gap: 30px;
-        }
-
-
-        .imagepart {
-            width: 183px;
-
-            .tag {
-                position: relative;
-
-                .book-image {
-                    height: 296px;
-                    width: 183px;
-                }
-
-                .available {
-                    margin: 0px;
-                    padding: 8px;
-                    align-items: center;
-                    display: inline-flex;
-                    justify-content: center;
-                    background-color: #5CA202;
-                    font-size: 13px;
-                    color: white;
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0px;
-                }
-
-                .booked {
-                    margin: 0px;
-                    padding: 8px;
-                    align-items: center;
-                    display: inline-flex;
-                    justify-content: center;
-                    background-color: #C22A34;
-                    font-size: 13px;
-                    color: white;
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0px;
-                }
-
-            }
-
-            .imagetext {
-                color: #1E1E1E;
-                margin-top: 10px;
-
-                .bookname {
-                    font-size: 15px;
-                    margin-bottom: 10px;
-                }
-
-                .bookauthor {
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-
-    .genreandthemes {
-        margin-top: 35px;
-        margin-bottom: 45px;
-
-        .genreheading {
-            color: #1E1E1E;
+        .genrecolumn {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            gap: 17px;
+            align-items: center;
 
-            h2 {
-                color: #000;
-                font-family: Rubik;
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                letter-spacing: 2.88px;
-                text-transform: uppercase;
+            // width: calc(100%/5 - 21px);
+            .genrecover {
+                border: 1px dashed rgba(30, 30, 30, 0.40);
+                border-radius: 119px;
+                height: 348px;
                 padding: 10px;
-            }
-        }
 
-        .genrecollection {
-            display: flex;
-            justify-content: space-between;
-            justify-content: flex-start;
-            gap: 26px;
-            padding-top: 40px;
-            overflow-y: hidden;
-
-            .genrecolumn {
-                display: flex;
-                flex-direction: column;
-                gap: 17px;
-                align-items: center;
-
-                // width: calc(100%/5 - 21px);
-                .genrecover {
-                    border: 1px dashed rgba(30, 30, 30, 0.40);
-                    border-radius: 119px;
-                    height: 348px;
-                    padding: 10px;
-
-                    .genrecoverpicture {
-                        width: 215.963px;
-                        height: 326.148px;
-                        border-radius: 108px;
-                    }
+                .genrecoverpicture {
+                    width: 215.963px;
+                    height: 326.148px;
+                    border-radius: 108px;
                 }
+            }
 
-                .genretitle {
-                    font-size: 18px;
-                    color: #1E1E1E;
+            .genretitle {
+                font-size: 18px;
+                color: #1E1E1E;
 
-                    .noofbooks {
-                        text-align: center;
-                        font-size: 14px;
-                        color: rgba(30, 30, 30, 0.40);
-                    }
+                .noofbooks {
+                    text-align: center;
+                    font-size: 14px;
+                    color: rgba(30, 30, 30, 0.40);
                 }
             }
         }

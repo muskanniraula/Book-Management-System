@@ -1,21 +1,21 @@
 .background {
-    position: relative;
-    background-image: url("../images/book-background.png");
-    height: 100%;
-    width: 100%;
-    background-size:cover;
+    // position: relative;
+    // background-image: url("../images/book-background.png");
+    // height: 100%;
+    // width: 100%;
+    // background-size:cover;
 
-    &::before {
-        background-size:cover;   
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-        content: "";
-        background-image: url("../images/background-vector.svg");
-        background-repeat: no-repeat;
-        padding-right: 10px;
-    }
+    // &::before {
+    //     background-size:cover;   
+    //     height: 100%;
+    //     width: 100%;
+    //     position: absolute;
+    //     z-index: 0;
+    //     content: "";
+    //     background-image: url("../images/background-vector.svg");
+    //     background-repeat: no-repeat;
+    //     padding-right: 10px;
+    // }
 
     .content {
         z-index: 2;
@@ -39,7 +39,7 @@
     form {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        column-gap: 10px;
         margin-top: 24px;
       
         .forgot

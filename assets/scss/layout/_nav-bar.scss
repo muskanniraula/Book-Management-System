@@ -1,54 +1,63 @@
 .nav-bar {
-    padding:15px 0;
+    padding: 15px 0;
     background-color: white;
-box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.07);
 
-ul
-{
-    width: 224px;
-    position: absolute;
+    ul {
+        width: 224px;
+        position: absolute;
 
-}
+    }
+
     .navigation {
         display: none;
     }
+
     .search {
         display: none;
+
+        
     }
+
+    .searchformborder{
+        border: 1px solid #dee2e6;
+        box-shadow: none;
+    }
+
     .circle {
         overflow: hidden;
         display: none;
         border: 2px solid $black;
-        padding: 6px 3px;
+        padding: 0px 3px;
         border-radius: 50px;
-      
+
         svg {
             margin-bottom: -8px;
         }
     }
 
-    .hidden
-    {
+    .hidden {
         display: block;
     }
+
     @media (min-width: $lg) {
-        ul
-        {
+        ul {
             width: auto;
         }
+
         .navigation {
             display: block;
-            
+
         }
-        .hidden
-        {
+
+        .hidden {
             display: none;
         }
-       
+
         .circle {
             display: block;
         }
-        
+
     }
 
 }

@@ -1,30 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookish Blog</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faq</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./assets/css/about.css"> -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+   crossorigin="anonymous"
+  />
 
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+   rel="stylesheet"
+  />
 
-<body>
-   
- 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+   rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+ </head>
+
+ <body>
 
     <header class="nav-bar">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-2">
                     <div class="logo">
-                        <img src="./assets/images/BOOKISH.svg" alt="">
+                        <a href="./index.html">
+                        <img src="./assets/images/BOOKISH.svg" alt="" >
+                        </a>
                     </div>
                 </div>
                 <div class="navigation col-4 offset-2">
                     <div class=" d-flex gap-5 ">
-                        <div class="navigation-button-enabled  gap-1">
+                        <a class="navigation-button-enabled  gap-1" href="./index.html">
                             <svg class="pb-2" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="home">
@@ -38,24 +59,26 @@
                             </svg>
 
                             <h3>Home</h3>
-                        </div>
-                        <div class="navigation-button-disabled d-flex align-items-center gap-1">
-                            <svg class="pb-1" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="book-open">
-                                    <path id="Vector"
-                                        d="M2.5 3.75H10C11.3261 3.75 12.5979 4.27678 13.5355 5.21447C14.4732 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 14.6049 24.3016 13.9017 23.5983C13.1984 22.8951 12.2446 22.5 11.25 22.5H2.5V3.75Z"
-                                        stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path id="Vector_2"
-                                        d="M27.5 3.75H20C18.6739 3.75 17.4021 4.27678 16.4645 5.21447C15.5268 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 15.3951 24.3016 16.0983 23.5983C16.8016 22.8951 17.7554 22.5 18.75 22.5H27.5V3.75Z"
-                                        stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
+                        </a>
+                        <a href="./genreandthemes.html">
+                            <div class="navigation-button-enabled d-flex align-items-center gap-1">
+                                <svg class="pb-1" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="book-open">
+                                         <path id="Vector"
+                                            d="M2.5 3.75H10C11.3261 3.75 12.5979 4.27678 13.5355 5.21447C14.4732 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 14.6049 24.3016 13.9017 23.5983C13.1984 22.8951 12.2446 22.5 11.25 22.5H2.5V3.75Z"
+                                            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path id="Vector_2"
+                                            d="M27.5 3.75H20C18.6739 3.75 17.4021 4.27678 16.4645 5.21447C15.5268 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 15.3951 24.3016 16.0983 23.5983C16.8016 22.8951 17.7554 22.5 18.75 22.5H27.5V3.75Z"
+                                            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </svg>
 
-                            <h3>Genre & themes</h3>
-                        </div>
+                                <h3>Genre & themes</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-2 offset-lg-1 offset-8">
@@ -64,7 +87,7 @@
                             <input type="text" placeholder="Search">
                             <img src="./assets/images/search.svg" alt="">
                         </div>
-                        <div class="circle">
+                        <a class="circle" href="./signin.html">
                             <svg height="20" viewBox="0 0 68 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="&#240;&#159;&#166;&#134; icon &#34;User&#34;">
                                     <path id="Vector"
@@ -73,18 +96,19 @@
                                 </g>
                             </svg>
 
-                        </div>
+                        </a>
                         <div>
 
                             <div class="dropdown">
-                            
-                                    <img src="./assets/images/menu.svg" alt="" class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            
+
+                                <img src="./assets/images/menu.svg" alt="" class=" dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
                                 <ul class="dropdown-menu mt-3">
                                     <li>
                                         <form class="form-group mx-3 hidden">
                                             <div class="input-group input-group-sm">
-                                                <input class="form-control" type="text">
+                                                <input class="form-control searchformborder" type="text">
                                                 <button type="submit" class="btn btn-dark  btn-sm " id="search"
                                                     value=""><svg width="20" viewBox="0 0 25 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -104,16 +128,16 @@
                                     </li>
 
 
-                                    <li><a class="dropdown-item hidden" href="">Home</a></li>
-                                    <li><a class="dropdown-item hidden" href="">Genre & Themes</a></li>
-                                    <li><a class="dropdown-item hidden" href="">My Profile</a> </li>
-                                    <li><a class="dropdown-item" href="">About Us </a></li>
-                                    <li><a class="dropdown-item" href="">Contact Us</a></li>
-                                    <li><a class="dropdown-item" href="">Blog</a></li>
-                                    <li><a class="dropdown-item" href="">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="">Privacy & Policy</a></li>
-                                    <li><a class="dropdown-item" href="">Terms & Condition</a></li>
-
+                                    <li><a class="dropdown-item hidden" href="./index.html">Home</a></li>
+                                    <li><a class="dropdown-item hidden" href="./genreandthemes.html">Genre & Themes</a>
+                                    </li>
+                                    <li><a class="dropdown-item hidden" href="./Profile.html">My Profile</a> </li>
+                                    <li><a class="dropdown-item" href="./about.html">About Us </a></li>
+                                    <li><a class="dropdown-item" href="./contactus.html">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="./Blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="./privacy.html">Privacy & Policy</a></li>
+                                    <li><a class="dropdown-item" href="./terms.html">Terms & Condition</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -125,7 +149,7 @@
 
         </div>
     </header>
-    <main>
+<main>
         <section class="faq-banner my-5">
             <div class="container">
                 <div class="row align-items-center">
@@ -394,7 +418,112 @@
         
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <footer>
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-2 col-md-2">
+      <div class="logos">
+       <div class="logo">
+        <a href="./index.html"
+         ><img src="assets/images/BOOKISHH.svg" alt="" class="logo"
+        /></a>
+       </div>
+       <div class="socials">
+        <a href="https://www.facebook.com/"
+         ><img src="assets/images/facebook.svg" alt="" class="footlogo"
+        /></a>
+        <a href="https://www.telegram.com/"
+         ><img src="assets/images/telegram.svg" alt="" class="footlogo"
+        /></a>
+        <a href="https://www.twitter.com/"
+         ><img src="assets/images/twitter.svg" alt="" class="footlogo"
+        /></a>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-1"></div>
+     <div class="col-lg-6 col-md-9">
+      <div class="lists">
+       <ul class="list">
+        <li class="listtitle">About</li>
+        <li class="listitem">
+         <a href="./about.html" class="footlink">About US</a>
+        </li>
+        <li class="listitem">
+         <a href="./contactus.html" class="footlink">Contact Us</a>
+        </li>
+        <li class="listitem">
+         <a href="./Blog.html" class="footlink">Blog</a>
+        </li>
+        <li class="listitem"><a href="./faq.html" class="footlink">FAQs</a></li>
+        <li class="listitem">
+         <a href="./privacy.html" class="footlink">Privacy & policy</a>
+        </li>
+        <li class="listitem">
+         <a href="./terms.html" class="footlink">Terms & conditions</a>
+        </li>
+       </ul>
+       <ul class="list">
+        <li class="listtitle">Genre & Themes</li>
+        <li class="listitem">
+         <a href="./allbooks.html" class="footlink">All Books</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Comedy</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Biography</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Fantasy</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Fiction</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">History</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Horror</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Romance</a>
+        </li>
+        <li class="listitem">
+         <a href="./genre.html" class="footlink">Science</a>
+        </li>
+       </ul>
+       <ul class="list">
+        <li class="listtitle">My Account</li>
+        <li class="listitem">
+         <a href="./Profile.html" class="footlink">My Profile</a>
+        </li>
+        <li class="listitem">
+         <a href="./rentedbooks.html" class="footlink">Rented Books</a>
+        </li>
+        <li class="listitem">
+         <a href="./bookedbooks.html" class="footlink">Booked Books</a>
+        </li>
+        <li class="listitem">
+         <a href="./savedbooks.html" class="footlink">Saved Books</a>
+        </li>
+        <li class="listitem">
+         <a href="./Bookedhistory.html" class="footlink">Books History</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="copyright">&copy; copyright</div>
+  </footer>
 
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+   crossorigin="anonymous"
+  ></script>
+ </body>
 </html>
+
+<html l

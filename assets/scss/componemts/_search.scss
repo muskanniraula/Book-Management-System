@@ -18,18 +18,18 @@
     overflow: hidden;
     border: 2px solid $black;
     border-radius: 25px;
-    padding: 0px 2px;
+
 
     &:hover {
         input {
-            @include search-bar-animation(77px);
-            width: 77px;
+            @include search-bar-animation(70px);
+            width: 70px;
             padding-left: 10px;
         }
         @media (min-width: $xl) {
             input {
-                @include search-bar-animation(120px);
-                width: 120px;
+                @include search-bar-animation(110px);
+                width: 110px;
             }
         }
     }
@@ -39,14 +39,13 @@
         border: none;
         outline: none;
         &:focus {
-            width: 77px;
-
+            width: 70px;
             padding-left: 10px;
         }
 
         @media (min-width: $xl) {
             &:focus {
-                width: 120px;
+                width: 110px;
             }
         }
     }
