@@ -175,7 +175,18 @@
         .pagesbtnancor {
             text-decoration: none;
             color: #3D3D3D;
+
         }
+        
+    }
+    .pagestn-active
+    {
+
+        @extend .pagestn;
+        background-color: #1E1E1E;
+        color: #ffffff
+    
+
     }
 
     .paginationext {

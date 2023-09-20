@@ -425,27 +425,7 @@
 
         </section>
         <div class="allbooksone-pagination" id="pagination-btn">
-            <a href="" class="pagesbtnancor">
-                <button type="button" class="pagestn">
-                    1
-                </button>
-            </a>
-            <a href="" class="pagesbtnancor">
-                <button type="button" class="pagestn">
-                    2
-                </button>
-            </a>
-            <a href="" class="pagesbtnancor">
-                <button type="button" class="pagestn">
-                    3
-                </button>
-            </a>
-            <a href="" class="pagesbtnancor">
-                <button type="button" class="pagestn">
-                    4
-                </button>
-            </a>
-            <a href="" class="paginationext">Next</a>
+            
         </div>
     </main>
     <footer>
@@ -546,16 +526,8 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
 
-    <script>
-        var header = document.getElementById("pagination-btn");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
+    <script src="./assets/js/navigation.js">
+      
     </script>
 </body>
 

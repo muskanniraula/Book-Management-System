@@ -183,6 +183,10 @@
                 padding: 10px;
                 border: 1px solid #7F7F7F;
                 margin-bottom: 30px;
+                &:focus-visible
+                {
+                border: 1px solid #00b7ff;
+                }
             }
 
             .contactus-email {
