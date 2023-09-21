@@ -1,72 +1,91 @@
 .background {
-    // position: relative;
-    // background-image: url("../images/book-background.png");
-    // height: 100%;
-    // width: 100%;
-    // background-size:cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 
-    // &::before {
-    //     background-size:cover;   
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     z-index: 0;
-    //     content: "";
-    //     background-image: url("../images/background-vector.svg");
-    //     background-repeat: no-repeat;
-    //     padding-right: 10px;
-    // }
+    @media screen and (min-width:768px) {
+        background-image: url("../images/book-background.png");
+    }
+
+    
+
+
+
+
+    &::before {
+        background-size: contain;
+        height: 100%;
+        width: 97%;
+        position: absolute;
+        z-index: 0;
+        content: "";
+        background-image: url("../images/background-vector.svg");
+        background-repeat: no-repeat;
+        padding-right: 10px;
+
+
+        @media screen and (max-width:1268px) {
+            background-size: cover;
+            width: 100%;            
+        }
+    }
 
     .content {
         z-index: 2;
         position: relative;
+
         .container {
             .signin-nav-bar {
                 margin-right: 64px;
             }
         }
     }
-    .nav
-    {
+
+    .nav {
         display: none;
     }
+
     .btn {
         border-radius: 24px;
     }
+
     .btn-dark {
         background-color: $black;
     }
+
     form {
         display: flex;
         flex-direction: column;
         column-gap: 10px;
         margin-top: 24px;
-      
-        .forgot
-        {
+
+        .forgot {
             align-self: flex-end;
-    text-decoration: none;
+            text-decoration: none;
 
 
         }
     }
+
     .redirect-signup {
         display: flex;
+
+        padding-top: 10px;
         a {
             margin-left: 4px;
         }
     }
+
     .forgot {
         align-self: flex-end;
     }
-    @media (min-width:$md) 
-    {
-        .content
-        {  
-         .nav
-         {
-            display: block;
-         }
+
+    @media (min-width:$md) {
+        .content {
+            .nav {
+                display: block;
+            }
 
         }
     }

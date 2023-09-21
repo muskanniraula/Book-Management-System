@@ -1,0 +1,103 @@
+.book-description {
+    .book-title {
+        h1 {
+            margin: 0 0 0 0;
+            @include text(32px, Roboto, 500, $black);
+        }
+        h4 {
+            margin: 0;
+            @include text(16px, Roboto, 400, $black);
+        }
+        p {
+            margin: 0;
+            @include text(12px, Roboto, 400, $black);
+            text-align: justify;
+        }
+        .btn-dark {
+            background-color: $black;
+            border-radius: 50px;
+        }
+        @media (min-width: $md) {
+            h1 {
+                font-size: 48px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        @media (min-width: $lg) {
+            h1 {
+                font-size: 64px;
+            }
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .book-info {
+        h2 {
+            @include text(22px, Roboto, 600, $black);
+        }
+        p {
+            @include text(16px, Roboto, 400, $black);
+        }
+    }
+    .review {
+        .stars {
+            label {
+                padding-right: 8px;
+                svg {
+                    stroke: #9f9e9e;
+                }
+                &:hover {
+                    & ~ label svg {
+                        stroke: #9f9e9e;
+                        fill: #fff;
+                    }
+                }
+            }
+            &:hover {
+                label {
+                    svg {
+                        fill: #febf00;
+                        stroke: #febf00;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: #000;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    textarea {
+        @include text(14px, Roboto, 400, $black);
+        &::placeholder {
+            color: #9f9e9e;
+        }
+    }
+}
+.comment-section {
+    h6 {
+        @include text(16px, Rubik, 400, $black);
+    }
+    p {
+        @include text(14px, Roboto, 400, #3d3d3d);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+    }
+}

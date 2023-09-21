@@ -142,9 +142,18 @@
             font-size: 13px;
             font-style: normal;
             font-weight: 400;
-            border: none;
+            border: 1px solid #1E1E1E  ;
+            color: #ffff;
 
 
+&:hover
+{
+    background: #fff;
+    color: #1E1E1E;
+    .blogsancor {
+        color: #1E1E1E;
+    }
+}
             .blogsancor {
                 text-decoration: none;
                 color: #ffff;
@@ -197,5 +206,36 @@
         font-weight: 400;
         line-height: normal;
         margin-left: 20px;
+    }
+}
+
+.checkblogsbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .checkbtn {
+        border-radius: 5px;
+        border: 1px solid #000;
+        display: flex;
+        width: 386px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffff;
+        color: #1E1E1E;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-family: 'Roboto', sans-serif;
+
+
+        &:hover {
+            background-color: #1E1E1E;
+            color: #ffff;
+        }
     }
 }

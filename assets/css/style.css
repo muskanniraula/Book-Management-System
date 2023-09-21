@@ -91,9 +91,19 @@
   justify-content: space-between;
   gap: 9px;
 }
+.allbooks .text .seeall:hover a {
+  color: #0077ff;
+}
+.allbooks .text .seeall:hover svg {
+  stroke: #0077ff;
+}
 .allbooks .text .seeall a {
   font-size: 18px;
   color: white;
+  text-decoration: underline;
+}
+.allbooks .text .seeall svg {
+  stroke: white;
 }
 .allbooks .text .seeall .rightarrow {
   width: 24px;
@@ -215,7 +225,7 @@
 .booksone .allbooks-topheading {
   display: flex;
   justify-content: center;
-  padding-top: 58px;
+  padding-top: 37px;
 }
 .booksone .allbooks-topheading h2 {
   color: white;
@@ -223,7 +233,6 @@
 .booksone .searchsection {
   display: flex;
   align-items: center;
-  margin-top: 29px;
   margin-bottom: 44px;
 }
 .booksone .searchsection .allbooks-searchbg {
@@ -1022,7 +1031,7 @@ a {
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin: 55px 0;
+  margin: 21px 0;
   align-items: center;
 }
 .allbooks-topheading h2 {
@@ -1170,6 +1179,22 @@ a {
   color: rgba(30, 30, 30, 0.4);
 }
 
+@keyframes arrowmoveforward {
+  from {
+    padding-left: 10px;
+  }
+  to {
+    padding-left: 20px;
+  }
+}
+@keyframes arrowmovebackward {
+  from {
+    padding-left: 20px;
+  }
+  to {
+    padding-left: 10px;
+  }
+}
 .herobanner {
   width: 100%;
   height: 100%;
@@ -1226,6 +1251,11 @@ a {
   border: 1px solid rgba(30, 30, 30, 0);
   background: #FFF;
 }
+.herobanner .herotext button:hover img {
+  padding-left: 20px;
+  animation-name: arrowmoveforward;
+  animation-duration: 0.5s;
+}
 .herobanner .herotext button a {
   text-decoration: none;
   color: #1E1E1E;
@@ -1236,6 +1266,8 @@ a {
 }
 .herobanner .herotext button img {
   padding-left: 10px;
+  animation-name: arrowmovebackward;
+  animation-duration: 0.5s;
 }
 @media screen and (max-width: 425px) {
   .herobanner .herotext {
@@ -1414,7 +1446,15 @@ a {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  border: none;
+  border: 1px solid #1E1E1E;
+  color: white;
+}
+.blogs .eachblog .secbtn:hover {
+  background: #fff;
+  color: #1E1E1E;
+}
+.blogs .eachblog .secbtn:hover .blogsancor {
+  color: #1E1E1E;
 }
 .blogs .eachblog .secbtn .blogsancor {
   text-decoration: none;
@@ -1457,6 +1497,34 @@ a {
   font-weight: 400;
   line-height: normal;
   margin-left: 20px;
+}
+
+.checkblogsbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkblogsbtn .checkbtn {
+  border-radius: 5px;
+  border: 1px solid #000;
+  display: flex;
+  width: 386px;
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+}
+.checkblogsbtn .checkbtn:hover {
+  background-color: #1E1E1E;
+  color: white;
 }
 
 .profile {
@@ -1858,80 +1926,6 @@ ul li {
   margin-bottom: -40px;
 }
 
-.blogs {
-  margin: 70px 0;
-}
-.blogs .eachblog {
-  margin: 0 0 70px 0;
-}
-.blogs .eachblog .blogsimage2 {
-  width: 100%;
-}
-.blogs .eachblog h3 {
-  color: #1E1E1E;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  margin: 15px 0 8px 0;
-}
-.blogs .eachblog .pubdate {
-  color: #7F7F7F;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-}
-.blogs .eachblog .blogconte {
-  color: #3D3D3D;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142.857%;
-  padding-right: 20px;
-}
-.blogs .eachblog .secbtn {
-  background: #1E1E1E;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  border: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-.blogs .eachblog .secbtn:hover {
-  background-color: white;
-  color: #1E1E1E;
-  border: 1px solid #1E1E1E;
-}
-.blogs .checkblogsbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blogs .checkblogsbtn .checkbtn {
-  border-radius: 5px;
-  border: 1px solid #000;
-  display: flex;
-  width: 386px;
-  padding: 12px 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #1E1E1E;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-family: "Roboto", sans-serif;
-}
-.blogs .checkblogsbtn .checkbtn:hover {
-  background-color: #1E1E1E;
-  color: white;
-}
-
 .faq-banner .form-control:focus {
   border: none;
 }
@@ -1967,6 +1961,34 @@ ul li {
   box-shadow: none;
 }
 
+.background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url("../images/book-background.png");
+  }
+}
+.background::before {
+  background-size: contain;
+  height: 100%;
+  width: 97%;
+  position: absolute;
+  z-index: 0;
+  content: "";
+  background-image: url("../images/background-vector.svg");
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1268px) {
+  .background::before {
+    background-size: cover;
+    width: 100%;
+  }
+}
 .background .content {
   z-index: 2;
   position: relative;
@@ -1996,6 +2018,7 @@ ul li {
 }
 .background .redirect-signup {
   display: flex;
+  padding-top: 10px;
 }
 .background .redirect-signup a {
   margin-left: 4px;
@@ -2056,6 +2079,165 @@ ul li {
   }
 }
 
+.book-description {
+  background-color: #f7f7f7;
+}
+.book-description .book-title .container {
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 70px;
+  margin-bottom: -160px;
+  text-align: center;
+}
+.book-description .book-title .container h4 {
+  padding: 10px 0;
+}
+.book-description .book-title .container .unavailable-book {
+  text-align: left;
+  margin-bottom: 0px;
+  padding-bottom: 2px;
+}
+.book-description .book-title .container hr {
+  margin-top: 0;
+}
+.book-description .book-title .container .button-section {
+  margin-top: 70px;
+}
+.book-description .book-title .container .button-section .btn-dark {
+  padding: 9px 15px;
+}
+.book-description .book-title .container .button-section .save {
+  padding-right: 30px;
+}
+@media (min-width: 768px) {
+  .book-description .book-title .container {
+    text-align: left;
+    margin-bottom: -125px;
+  }
+  .book-description .book-title .container .button-section {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .book-description .book-title .container {
+    margin-bottom: -134px;
+  }
+  .book-description .book-title .container h4 {
+    padding: 23px 0;
+  }
+  .book-description .book-title .container .button-section {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .book-description .book-title .container {
+    margin-bottom: -145px;
+  }
+  .book-description .book-title .container .button-section {
+    margin-top: 85px;
+  }
+}
+@media (min-width: 1400px) {
+  .book-description .book-title .container {
+    margin-bottom: -160px;
+  }
+  .book-description .book-title .container .button-section {
+    margin-top: 113px;
+  }
+}
+.book-description .book-info .container {
+  padding-top: 132px;
+  background-color: #fff;
+}
+.book-description .book-info .container .editors {
+  padding: 50px 0;
+}
+@media (min-width: 992px) {
+  .book-description .book-info .container {
+    padding-top: 184px;
+  }
+  .book-description .book-info .container .editors {
+    padding: 0 0 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .book-description .book-info .container {
+    padding-top: 184px;
+  }
+}
+@media (min-width: 1400px) {
+  .book-description .book-info .container {
+    padding-top: 225px;
+  }
+}
+.book-description .review .container {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.book-description .review h3 {
+  margin-bottom: 36px;
+}
+.book-description .review .comment .comment-input {
+  border: 1px solid #eaeaeb;
+  border-radius: 10px;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.book-description .review .comment .comment-input .btn-outline-dark {
+  padding: 5px 24px;
+  color: #1e1e1e;
+  border: 1px solid #9f9e9e;
+  margin-right: 13px;
+  color: #9f9e9e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.book-description .review .comment .comment-input textarea {
+  border: none;
+  outline: none;
+}
+.book-description .comment-section .container {
+  background-color: #fff;
+}
+.book-description .comment-section .comment {
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 1px solid rgba(184, 185, 188, 0.3);
+  padding: 15px;
+}
+.book-description .comment-section .review-info {
+  padding-left: 20px;
+}
+.book-description p {
+  padding-top: 12px;
+  margin-bottom: 0;
+}
+.book-description .learn-more {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.book-description .learn-more::before, .book-description .learn-more::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+.book-description .learn-more:hover p {
+  color: #33BBFF;
+}
+.book-description .learn-more:hover::before, .book-description .learn-more:hover::after {
+  border-bottom: 1px solid #33BBFF;
+}
+.book-description .learn-more p {
+  padding: 10px;
+}
+
 .about-banner {
   text-align: center;
   font-family: "roboto", sans-serif;
@@ -2108,67 +2290,6 @@ ul li {
 @media (min-width: 992px) {
   .about-banner h1 {
     font-size: 48px;
-  }
-}
-
-.recentBlogs h2 {
-  color: #1e1e1e;
-  font-family: Rubik;
-  font-size: 16px;
-  font-weight: 500;
-}
-@media (min-width: 576px) {
-  .recentBlogs h2 {
-    font-size: 32px;
-  }
-}
-
-.missions h2 {
-  color: #1e1e1e;
-  font-family: Rubik;
-  font-size: 16px;
-  font-weight: 500;
-}
-.missions .mission .mission-heading {
-  color: #1e1e1e;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-}
-.missions .mission .number {
-  color: #1e1e1e;
-  font-family: PT Serif;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: 5.76px;
-}
-.missions .mission p {
-  color: #3d3d3d;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  .missions h2 {
-    font-size: 32px;
-  }
-  .missions .mission .mission-heading {
-    font-size: 16px;
-  }
-  .missions .mission .number {
-    font-size: 40px;
-  }
-  .missions .mission p {
-    font-size: 16px;
-  }
-}
-@media (min-width: 992px) {
-  .missions .mission .mission-heading {
-    font-size: 18px;
-  }
-  .missions .mission .number {
-    font-size: 64px;
   }
 }
 
@@ -2478,6 +2599,118 @@ ul li {
   color: #cecece;
   display: flex;
   justify-content: space-between;
+}
+
+.book-description .book-title h1 {
+  margin: 0 0 0 0;
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+}
+.book-description .book-title h4 {
+  margin: 0;
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.book-description .book-title p {
+  margin: 0;
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+.book-description .book-title .btn-dark {
+  background-color: #1e1e1e;
+  border-radius: 50px;
+}
+@media (min-width: 768px) {
+  .book-description .book-title h1 {
+    font-size: 48px;
+  }
+  .book-description .book-title h4 {
+    font-size: 18px;
+  }
+  .book-description .book-title p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .book-description .book-title h1 {
+    font-size: 64px;
+  }
+  .book-description .book-title h4 {
+    font-size: 22px;
+  }
+  .book-description .book-title p {
+    font-size: 16px;
+  }
+}
+.book-description .book-info h2 {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+}
+.book-description .book-info p {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.book-description .review .stars label {
+  padding-right: 8px;
+}
+.book-description .review .stars label svg {
+  stroke: #9f9e9e;
+}
+.book-description .review .stars label:hover ~ label svg {
+  stroke: #9f9e9e;
+  fill: #fff;
+}
+.book-description .review .stars:hover label svg {
+  fill: #febf00;
+  stroke: #febf00;
+}
+.book-description h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.book-description textarea {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.book-description textarea::-moz-placeholder {
+  color: #9f9e9e;
+}
+.book-description textarea::placeholder {
+  color: #9f9e9e;
+}
+
+.comment-section h6 {
+  color: #1e1e1e;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+}
+.comment-section p {
+  color: #3d3d3d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 
 .navigation-button, .navigation-button-disabled, .navigation-button-enabled {

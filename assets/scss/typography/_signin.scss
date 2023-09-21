@@ -79,7 +79,6 @@
 
         .checkbox {
             @include text(14px, Roboto, 400, $light-gray);
-
             a {
                 @include text(12px, Roboto, 400, $light-gray);
                 text-decoration-line: underline;

@@ -1,360 +1,381 @@
-<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bookish</title>
-  <link
-   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-   rel="stylesheet"
-   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-   crossorigin="anonymous"
-  />
-  <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-  />
-  <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <link rel="stylesheet" href="./dist/main.css" />
- </head>
- <body>
-  <!-- modal box -->
 
-  <!-- <section class="modal-box">
-         <div class="container">
-            <button type="button" class="modal-box-btn">Submit-1</button>
-            
-            <div class="popup">
-                <i class="fa fa-close" style="font-size:36px"></i>
-                <img src="./images/404-tick.png" class="tick-404">
-                <h2>Awesome!</h2>
-                <p>Your book has been added to your profile</p>
-                <button type="button"  class="button-go-to-profile">Go to profile</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Description</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-2">
+                    <div class="logo">
+                        <img src="./assets/images/BOOKISH.svg" alt="">
+                    </div>
+                </div>
+                <div class="navigation col-4 offset-2">
+                    <div class=" d-flex gap-5 ">
+                        <div class="navigation-button-enabled  gap-1">
+                            <svg class="pb-2" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="home">
+                                    <path id="Vector"
+                                        d="M3.75 11.25L15 2.5L26.25 11.25V25C26.25 25.663 25.9866 26.2989 25.5178 26.7678C25.0489 27.2366 24.413 27.5 23.75 27.5H6.25C5.58696 27.5 4.95107 27.2366 4.48223 26.7678C4.01339 26.2989 3.75 25.663 3.75 25V11.25Z"
+                                        stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M11.25 27.5V15H18.75V27.5" stroke="#1E1E1E" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+
+                            <h3>Home</h3>
+                        </div>
+                        <div class="navigation-button-disabled d-flex align-items-center gap-1">
+                            <svg class="pb-1" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="book-open">
+                                    <path id="Vector"
+                                        d="M2.5 3.75H10C11.3261 3.75 12.5979 4.27678 13.5355 5.21447C14.4732 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 14.6049 24.3016 13.9017 23.5983C13.1984 22.8951 12.2446 22.5 11.25 22.5H2.5V3.75Z"
+                                        stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2"
+                                        d="M27.5 3.75H20C18.6739 3.75 17.4021 4.27678 16.4645 5.21447C15.5268 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 15.3951 24.3016 16.0983 23.5983C16.8016 22.8951 17.7554 22.5 18.75 22.5H27.5V3.75Z"
+                                        stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </svg>
+
+                            <h3>Genre & themes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-2 offset-lg-1 offset-8">
+                    <div class="d-flex align-items-center gap-4 justify-content-end">
+                        <div class="d-lg-flex search">
+                            <input type="text" placeholder="Search">
+                            <img src="./assets/images/search.svg" alt="">
+                        </div>
+                        <div class="circle">
+                            <svg height="20" viewBox="0 0 68 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="&#240;&#159;&#166;&#134; icon &#34;User&#34;">
+                                    <path id="Vector"
+                                        d="M47.0126 45.5735C42.7101 45.5735 40.6413 47.9721 33.5804 47.9721C26.5196 47.9721 24.4658 45.5735 20.1483 45.5735C9.02474 45.5735 0 54.5982 0 65.7217V69.5595C0 73.5322 3.22312 76.7553 7.19581 76.7553H59.9651C63.9378 76.7553 67.1609 73.5322 67.1609 69.5595V65.7217C67.1609 54.5982 58.1362 45.5735 47.0126 45.5735ZM59.9651 69.5595H7.19581V65.7217C7.19581 58.5859 13.0124 52.7693 20.1483 52.7693C22.337 52.7693 25.8899 55.1679 33.5804 55.1679C41.3309 55.1679 44.8089 52.7693 47.0126 52.7693C54.1485 52.7693 59.9651 58.5859 59.9651 65.7217V69.5595ZM33.5804 43.1749C45.4985 43.1749 55.1679 33.5055 55.1679 21.5874C55.1679 9.66937 45.4985 0 33.5804 0C21.6624 0 11.993 9.66937 11.993 21.5874C11.993 33.5055 21.6624 43.1749 33.5804 43.1749ZM33.5804 7.19581C41.5108 7.19581 47.9721 13.657 47.9721 21.5874C47.9721 29.5178 41.5108 35.979 33.5804 35.979C25.6501 35.979 19.1888 29.5178 19.1888 21.5874C19.1888 13.657 25.6501 7.19581 33.5804 7.19581Z"
+                                        fill="black" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div>
+
+                            <div class="dropdown">
+
+                                <img src="./assets/images/menu.svg" alt="" class=" dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <ul class="dropdown-menu mt-3">
+                                    <li>
+                                        <form class="form-group mx-3 hidden">
+                                            <div class="input-group input-group-sm">
+                                                <input class="form-control" type="text">
+                                                <button type="submit" class="btn btn-dark  btn-sm " id="search"
+                                                    value=""><svg width="20" viewBox="0 0 25 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g id="search">
+                                                            <path id="Vector"
+                                                                d="M11.5 19C15.9183 19 19.5 15.4183 19.5 11C19.5 6.58172 15.9183 3 11.5 3C7.08172 3 3.5 6.58172 3.5 11C3.5 15.4183 7.08172 19 11.5 19Z"
+                                                                stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path id="Vector_2" d="M21.4999 21.0004L17.1499 16.6504"
+                                                                stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </li>
+
+
+                                    <li><a class="dropdown-item hidden" href="">Home</a></li>
+                                    <li><a class="dropdown-item hidden" href="">Genre & Themes</a></li>
+                                    <li><a class="dropdown-item hidden" href="">My Profile</a> </li>
+                                    <li><a class="dropdown-item" href="">About Us </a></li>
+                                    <li><a class="dropdown-item" href="">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="">Blog</a></li>
+                                    <li><a class="dropdown-item" href="">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="">Privacy & Policy</a></li>
+                                    <li><a class="dropdown-item" href="">Terms & Condition</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section> -->
 
-  <!-- modal box 2---->
+        </div>
 
-  <!-- <section class="modal-box">
+        </div>
+    </header>
+    <main class="book-description">
+        <section class="book-title">
             <div class="container">
-               
-               <div class="popup">
-                <i class="fa fa-close" style="font-size:36px"></i>
-                   <p class="popup-book-title-1">Book Title </p>
-                   <h4 class="popup-book-title">The History of a Difficult Child</h4>
-                   
-                   <div class="date-selection">
-                         <div class="date-selection-rendering">
-                            <div class="date-selection-rendering-date">
-                                <label >Rendering Date</label>
-                                
-                            </div> 
-                            <input type="date" id="date-selection-rendering-date-id" name="birthday">
+                <div class="row row-gap-4">
+                    <div class="col-12 col-md-4 col-lg-3 offset-md-1">
+                        <img class="img-fluid" src="./assets/images/the-history.png" alt="">
+                    </div>
+
+                    <div class="col-md-6 offset-lg-1">
+                        <h1>
+                            The History of a Difficult Child
+                        </h1>
+                        <h4>
+                            Mihret Sibhat
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim venia.
+                        </p>
+                        <div class="button-section d-flex justify-content-between ">
+                            <button class="btn btn-dark"> Book Now
+                                <img src="./assets/images/arrow-up-right.svg" alt="">
+                            </button>
+                            <div>
+                                <!-- <img src="./assets/images/save.svg" class="save" alt=""> -->
+                                <img class="save" src="./assets/images/save-no-hover.svg" alt="">
+
+                                <img src="./assets/images/share.svg" alt="">
+                            </div>
                         </div>
-                         
-                        <div class="date-selection-due">
-                            <div class="date-selection-due-date">
-                                <label >Due Date</label>
-                                    
-                             </div>
-                             <input type="date" id="date-selection-due-date-id" name="birthday"> 
-                        </div>
-                       
-                   </div>
-                 
-                  <button type="button"  class="popup-book-button">Book</button>
-                   <button type="button"  class="popup-cancel-button">Cancel</button>
-               </div>
+
+                        <p class="unavailable-book">Book is not available at the moment</p>
+                        <hr>
+                    </div>
+                </div>
             </div>
-         </section> -->
+        </section>
+        <section class="book-info">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12  col-md-10 col-lg-4 offset-md-1">
+                        <h2>
+                            Description
+                        </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum non soluta animi
+                            maiores
+                            ea omnis, ducimus possimus quas vitae nam facilis obcaecati eligendi accusamus voluptatibus
+                            quos, nulla, at molestias?</p>
+                    </div>
+                    <div class="col-12  col-md-10  col-lg-4 offset-md-1 offset-lg-2">
+                        <div class="editors">
+                            <h2>Editors</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestias maxime atque
+                                aut
+                                hic, soluta est iusto. Porro, assumenda maiores repellat atque labore eligendi
+                                reiciendis
+                                quaerat, incidunt, dolorum similique enim!</p>
+                        </div>
+                        <div>
+                            <h2>Language</h2>
+                            <p>Standard English (USA & UK)</p>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- book title section ------------------------------------->
 
-  <section class="book-title">
-   <div class="container">
-    <div class="row">
-     <div class="col-md-5"></div>
-     <div class="col-md-6 book-title-1">
-      <h1>The History of Difficult Child</h1>
-      <h3>Mihret Sibhat</h3>
-      <p>
-       "Mihret Sibba" in my knowledge base. It's possible that this person may
-       not be widely known or that they became notable after my last knowledge
-       update in September 2021
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
+        </section>
+        <section class="review">
+            <div class="container">
+                <div class="row offset-md-1">
+                    <h3>
+                        Reviews
+                    </h3>
+                </div>
+                <div class="comment row">
+                    <div class="col-12  col-md-2 col-xl-1 offset-1 profile-pic">
+                        <img src="./assets/images/comment-profile-pic.png" class=" rounded-circle" alt="">
+                    </div>
+                    <div class="comment-input col-10 col-md-8 col-lg-8 col-xl-9 offset-1 offset-md-0">
+                        <textarea placeholder="Comment" rows="1"></textarea>
+                        <div class="d-flex justify-content-between align-items-end">
+                            
+                            <div class="stars d-flex">
+                             
+                                <label for="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none">
+                                    <path
+                                        d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </label>
+                                <label for="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none">
+                                    <path
+                                        d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </label>
+                                <label for="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none">
+                                    <path
+                                        d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </label>
+                                <label for="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none">
+                                    <path
+                                        d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </label>
+                                <label for="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none">
+                                    <path
+                                        d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </label>
+                  
 
-  <!-- --------------------------------------------main section starts---------------------------------------- -->
-  <section class="main-section">
-   <div class="container">
-    <!-- book image and book save --------------------------------------- -->
-    <div class="wrapper">
-     <section classs="book-img-book-save">
-      <div class="container">
-       <div class="row">
-        <div class="col-md-5">
-         <img src="./images/book-2.png" class="book-img" />
-        </div>
-        <div class="col-md-6 bookmark-save-share">
-         <div class="col-md-6">
-          <button type="button" class="book-now-button">
-           Book Now <i class="fa fa-location-arrow" aria-hidden="true"></i>
-          </button>
-         </div>
-         <div class="col-md-4"></div>
 
-         <div class="col-md-1">
-          <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-         </div>
-         <div class="col-md-1">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-         </div>
-        </div>
-       </div>
-      </div>
-     </section>
 
-     <!-- book description section------------------------------------------------------  -->
+                            </div>
+                            <button class="btn btn-outline-dark"> send</button>
 
-     <section class="book-description-and-editors">
-      <div class="container">
-       <div class="row">
-        <div class="col-md-5">
-         <h3>Description</h3>
-         <p>
-          "Mihret Sibba" in my knowledge base. It's possible that this person
-          may not be widely known or that they became notable after my last
-          knowledge update in September 2021.
-         </p>
-         <p>
-          "Mihret Sibba" in my knowledge base. It's possible that this person
-          may not be widely known or that they became notable after my last
-          knowledge update in September 2021."Mihret Sibba" in my knowledge
-          base. It's possible that this person may not be widely known or that
-          they became notable after my last knowledge update in September 2021.
-         </p>
-        </div>
+                        </div>
 
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-         <h3>Editors</h3>
-         <p>
-          "Mihret Sibba" in my knowledge base. It's possible that this person
-          may not be widely known or that they became notable after my last
-          knowledge update in September 2021.
-         </p>
 
-         <h3>Language</h3>
-         <p>Standard English (USA & UK)</p>
-        </div>
-       </div>
-      </div>
-     </section>
-     <!-- reviews secttion --------------------------------------------- -->
-     <section class="reviews-section">
-      <div class="container">
-       <h2>Reviews</h2>
-       <div class="row">
-        <div class="col-md-1">
-         <img src="./images/profile pic.png" class="profile-pic" />
-        </div>
-        <div class="col-md-11 new-comment">
-         <p>comment</p>
-         <div class="col-md-12 rating">
-          <div class="ratings-send">
-           <div class="rating-stars">
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-           </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="comment-section">
+            <div class="container">
+                <div class="row">
+                    <div class="comment col-10 offset-1">
+                        <div class="d-flex">
+                            <img src="./assets/images/review-profile-pic.png" class="rounded-circle" alt="">
+                            <div>
+                                <div class="review-info">
 
-           <button type="button" class="review-send">Send</button>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </section>
+                                    <h6>
+                                        username
 
-     <!-- previous reviews section  -->
+                                    </h6>
+                                    <div class="stars d-flex gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
 
-     <section class="previous-section">
-      <div class="container">
-       <div class="row previous-comment-box">
-        <div class="col-md-1 profile">
-         <img src="./images/profile pic.png" class="profile-pic-previous" />
-        </div>
-        <div class="col-md-10 user-name-comment">
-         <h3 class="user-name">User Name</h3>
-         <div class="rating">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-         </div>
+                                </div>
+                            </div>
 
-         <p>
-          It's possible that this person may they became notable after my last
-          knowledge update in September 2021."Mihret Sibba" in my knowledge
-          base. It's possible that this person may not be widely known or that
-          they became notable after my last knowledge update in September 2021.
-         </p>
-         <p class="respond-and-sign">
-          Respond <i class="fa fa-refresh" aria-hidden="true"></i>
-         </p>
-        </div>
-       </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat enim explicabo eum veniam
+                            dolore odit iste reprehenderit, hic, veritatis assumenda obcaecati debitis alias nesciunt
+                            dicta natus cupiditate. Ea, eveniet recusandae?</p>
+                            <p> Respond</p>
+                    </div>
+                    <div class="comment col-10 offset-1">
+                        <div class="d-flex">
+                            <img src="./assets/images/review-profile-pic.png" class="rounded-circle" alt="">
+                            <div>
+                                <div class="review-info">
 
-       <div class="row previous-comment-box">
-        <div class="col-md-1 profile">
-         <img src="./images/profile pic.png" class="profile-pic-previous" />
-        </div>
-        <div class="col-md-10 user-name-comment">
-         <h3 class="user-name">User Name</h3>
-         <div class="rating">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-         </div>
-         <p>
-          It's possible that this person may they became notable after my last
-          knowledge update in September 2021."Mihret Sibba" in my knowledge
-          base. It's possible that this person may not be widely known or that
-          they became notable after my last knowledge update in September 2021.
-         </p>
-         <p class="respond-and-sign">
-          Respond <i class="fa fa-refresh" aria-hidden="true"></i>
-         </p>
-        </div>
-       </div>
+                                    <h6>
+                                        username
 
-       <div class="row hr-line">
-        <div class="col-md-5">
-         <hr class="hr-left" />
-        </div>
-        <div class="col-md-2 load-more-button-box">
-         <button type="button" class="load-more-button">Load More</button>
-        </div>
-        <div class="col-md-5">
-         <hr class="hr-right" />
-        </div>
-       </div>
-      </div>
-     </section>
-    </div>
-   </div>
-  </section>
+                                    </h6>
+                                    <div class="stars d-flex gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <path
+                                                d="M8.5 1L10.8175 5.93691L16 6.73344L12.25 10.5741L13.135 16L8.5 13.4369L3.865 16L4.75 10.5741L1 6.73344L6.1825 5.93691L8.5 1Z"
+                                                stroke="#9F9E9E" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
 
-  <footer>
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-2 col-md-2">
-      <div class="logos">
-       <div class="logo">
-        <a href="./index.html"
-         ><img src="assets/images/BOOKISHH.svg" alt="" class="logo"
-        /></a>
-       </div>
-       <div class="socials">
-        <a href="https://www.facebook.com/"
-         ><img src="assets/images/facebook.svg" alt="" class="footlogo"
-        /></a>
-        <a href="https://www.telegram.com/"
-         ><img src="assets/images/telegram.svg" alt="" class="footlogo"
-        /></a>
-        <a href="https://www.twitter.com/"
-         ><img src="assets/images/twitter.svg" alt="" class="footlogo"
-        /></a>
-       </div>
-      </div>
-     </div>
-     <div class="col-lg-4 col-md-1"></div>
-     <div class="col-lg-6 col-md-9">
-      <div class="lists">
-       <ul class="list">
-        <li class="listtitle">About</li>
-        <li class="listitem">
-         <a href="./about.html" class="footlink">About US</a>
-        </li>
-        <li class="listitem">
-         <a href="./contactus.html" class="footlink">Contact Us</a>
-        </li>
-        <li class="listitem">
-         <a href="./Blog.html" class="footlink">Blog</a>
-        </li>
-        <li class="listitem"><a href="./faq.html" class="footlink">FAQs</a></li>
-        <li class="listitem">
-         <a href="./privacy.html" class="footlink">Privacy & policy</a>
-        </li>
-        <li class="listitem">
-         <a href="./terms.html" class="footlink">Terms & conditions</a>
-        </li>
-       </ul>
-       <ul class="list">
-        <li class="listtitle">Genre & Themes</li>
-        <li class="listitem">
-         <a href="./allbooks.html" class="footlink">All Books</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Comedy</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Biography</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Fantasy</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Fiction</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">History</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Horror</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Romance</a>
-        </li>
-        <li class="listitem">
-         <a href="./genre.html" class="footlink">Science</a>
-        </li>
-       </ul>
-       <ul class="list">
-        <li class="listtitle">My Account</li>
-        <li class="listitem">
-         <a href="./Profile.html" class="footlink">My Profile</a>
-        </li>
-        <li class="listitem">
-         <a href="./rentedbooks.html" class="footlink">Rented Books</a>
-        </li>
-        <li class="listitem">
-         <a href="./bookedbooks.html" class="footlink">Booked Books</a>
-        </li>
-        <li class="listitem">
-         <a href="./savedbooks.html" class="footlink">Saved Books</a>
-        </li>
-        <li class="listitem">
-         <a href="./Bookedhistory.html" class="footlink">Books History</a>
-        </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="copyright">&copy; copyright</div>
-  </footer>
- </body>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat enim explicabo eum veniam
+                            dolore odit iste reprehenderit, hic, veritatis assumenda obcaecati debitis alias nesciunt
+                            dicta natus cupiditate. Ea, eveniet recusandae?</p>
+                            <p> Respond</p>
+                    </div>
+                </div>
+                <div class="learn-more">
+                    <p>learn more</p>
+
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>

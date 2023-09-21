@@ -18,14 +18,32 @@
             justify-content: space-between;
             gap: 9px;
 
+            &:hover
+            {
+                a {
+                    color: #0077ff;
+                }
+
+                svg
+                {
+                    stroke:#0077ff;
+                }   
+            }
             a {
                 font-size: 18px;
                 color: white;
+                text-decoration: underline;
             }
 
+            svg
+            {
+                stroke:white;
+            }
+            
             .rightarrow {
                 width: 24px;
                 height: 24px;
+                
             }
         }
     }
