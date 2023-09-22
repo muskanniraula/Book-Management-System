@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
@@ -8,9 +8,10 @@ table {
     margin: 50px 0 35px 0;
 
     @media screen and (max-width:767px) {
-        margin-bottom: 10px;        
+        margin-bottom: 10px;
     }
 }
+
 th {
     padding-bottom: 40px;
     border-bottom: 1px solid #7F7F7F;
@@ -26,6 +27,29 @@ td {
     padding: 20px 20px 20px 0;
     border-bottom: 1px solid #7F7F7F;
     color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.borrowed {
+    color: #008100;
+}
+
+.delayed {
+    color: #E40613;
+}
+
+.extended {
+    color: #56AFFF;
+}
+
+.returned {
+    color: #9F9E9E;
+    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
