@@ -1,7 +1,53 @@
 .profile {
     background-color: #F2F4F5;
 
-    
+    .profilepic {
+
+
+        .profilepp {
+            width: 187px;
+            height: 187px;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+
+
+            .pp {
+
+                &:hover {
+                    opacity: 0.3;
+                }
+
+            }
+
+            .editpic {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            &:hover .editpic {
+                opacity: 1;
+            }
+
+            .ppbtn {
+                border: none;
+                padding: 2px 5px;
+                border-radius: 7px;
+                background-color: #1E1E1E;
+                color: #F2F4F5;
+            }
+
+        }
+
+    }
+
+
 
     .profileinfo {
         margin: 44px 0 0 0;

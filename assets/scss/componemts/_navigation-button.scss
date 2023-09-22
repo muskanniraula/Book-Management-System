@@ -2,7 +2,7 @@
     display: inline-flex;
     align-items: center;
     border-radius: 24px;
-    padding: 8px 12px 5px;
+    padding: 8px 12px 5px 6px;
     h3 {
         @include text(12px, Roboto, 400, $black);
         margin: 0px;
@@ -47,3 +47,18 @@
         color: white;
     }
 }
+
+
+
+.navigation-button-genre-enabled
+{
+    @extend .navigation-button-enabled;
+    padding: 8px 12px 5px 12px;
+
+}
+.navigation-button-genre-disabled
+{
+    @extend .navigation-button-disabled;
+    padding: 8px 12px 5px 12px;
+}
+

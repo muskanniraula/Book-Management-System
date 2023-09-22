@@ -10,7 +10,7 @@
         }
         p {
             margin: 0;
-            @include text(12px, Roboto, 400, $black);
+            @include text(14px, Roboto, 400, $black);
             text-align: justify;
         }
         .btn-dark {
@@ -19,7 +19,7 @@
         }
         @media (min-width: $md) {
             h1 {
-                font-size: 48px;
+                font-size: 40px;
             }
             h4 {
                 font-size: 18px;
@@ -30,13 +30,13 @@
         }
         @media (min-width: $lg) {
             h1 {
-                font-size: 64px;
+                font-size: 54px;
             }
             h4 {
-                font-size: 22px;
+                font-size: 20px;
             }
             p {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }

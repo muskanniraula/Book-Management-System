@@ -1,6 +1,5 @@
 const url = new URLSearchParams(window.location.search);
 const page =url.get("page");
-console.log(page);
 if(!page)
 {
     window.location.replace(`${window.location.pathname}?page=1`);

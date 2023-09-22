@@ -1,10 +1,23 @@
 .book-description {
     background-color: #f7f7f7;
+    position: relative;
+    .pop-up
+    {
+        background-color: rgba(30, 30, 30, 0.60);
+
+        display: none;
+position: fixed;
+z-index: 1;
+width: 100%;
+height: 100%;
+    }
     .book-title {
+        position: relative;
+        z-index: 0;
         .container {
             background-color: #ffffff00;
             padding-top: 70px;
-            margin-bottom: -160px;
+            margin-bottom: -114px;
             text-align: center;
             h4 {
                 padding: 10px 0;
@@ -20,7 +33,7 @@
                 margin-top: 0;
             }
             .button-section {
-                margin-top: 70px;
+                margin-top: 40px;
                 .btn-dark {
                     padding: 9px 15px;
                 }
@@ -31,13 +44,12 @@
 
             @media (min-width: $md) {
                 text-align: left;
-                margin-bottom: -125px;
+                
                 .button-section {
-                    margin-top: 25px;
+                    margin-top: 40px;
                 }
             }
             @media (min-width: $lg) {
-                margin-bottom: -134px;
 
                 h4 {
                     padding: 23px 0;
@@ -47,9 +59,9 @@
                 }
             }
             @media (min-width: $xl) {
-                margin-bottom: -145px;
+                margin-bottom: -120px;
                 .button-section {
-                    margin-top: 85px;
+                    margin-top: 40px;
                 }
             }
             @media (min-width: $xxl) {
@@ -157,12 +169,15 @@ padding: 15px;
         display: flex;
         align-items: center;
         text-align: center;
-      
+    p
+    {
+        @include text(16px,Roboto,400,#9F9E9E);
+    }
         &::before,
         &::after {
             content: "";
             flex: 1;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #9F9E9E;
         }
         &:hover {
             
